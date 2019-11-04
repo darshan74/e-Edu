@@ -86,7 +86,7 @@
                 </div>
                 <div>
                     {{config('app.key')}} <br>
-                    <h3> Don't Panic. Read code to understand. </h3>
+                    <h3> This indicates you're in develop branch. </h3>
                     <ol>
                     <li> Schema Pending </li>
                     <li> Model Pending </li>
