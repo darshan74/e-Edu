@@ -8,4 +8,4 @@
 5. If you see the .env file missing, copy .env.example into new .env and generate the app key.
 6. run $ php artisan serve
 ---
-# Understand the project structure before messing with the code ! ~ PSP
+Understand the project structure before messing with the code !
