@@ -11,6 +11,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        // this'll seed QA table.
+        $this->call(QATableSeeder::class);
     }
 }

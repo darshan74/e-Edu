@@ -1,11 +1,20 @@
 @extends('layouts.app')
 
 @section('content')
+
+<!-- All styles here please -->
+<style>
+    a {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+</style>
+<!-- Content below -->
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Dashboard</div>
+                <div class="card-header">E-Edu Dashboard</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -13,8 +22,8 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    You are logged in!
+                    <button type="button" class="btn btn-success"> <a href="{{route('start-test')}}" style="color:white; text-decoration:none;">
+                    Start Q & A Evaluation </a> </button>
                 </div>
             </div>
         </div>

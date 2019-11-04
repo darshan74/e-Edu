@@ -17,5 +17,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
+// All GET routes
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/test', 'HomeController@testCandidate')->name('start-test');
 
+// All POST routes
+Route::post('/test', 'HomeController@checkScore')->name('check-score');
