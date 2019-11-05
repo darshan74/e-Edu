@@ -87,10 +87,6 @@
                 <div>
                     {{config('app.key')}} <br>
                     <h3> This indicates you're in develop branch. </h3>
-                    <ol>
-                    <li> Schema Pending </li>
-                    <li> Model Pending </li>
-                    </ol>
                 </div>
 
                 <div class="links">

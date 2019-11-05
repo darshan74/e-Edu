@@ -16,7 +16,6 @@
 
         <div class="col-md-8">
             <div class="card">
-                
                 <div class="card-header">Test your skills!</div>
 
                 <div class="card-body">
@@ -29,7 +28,6 @@
                     @csrf
                         @if($data->isEmpty())
                             <h4> No Questions exist at the moment. </h4>
-                            <p style="color:red;"> Add questions using "QATableSeeder.php" and run "$php artisan db:seed" to enable this form. </p>
                             <script>
                             $(document).ready(function() {
                                $("#eval-form > .actions a, #submitButton").prop('disabled',true); 
@@ -38,13 +36,13 @@
                         @endif
                         @foreach($data as $data)
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Question {{$data->id}}</label>
-                            <input type="text" class="form-control" id="question" name="question{{$data->id}}"
+                            <label for="question_label">Question {{$loop->iteration}}</label>
+                            <input type="text" class="form-control" id="question" name="question{{$loop->iteration}}"
                                  value="{{$data->question}}" readonly>
                         </div>
                         <div class="form-group">
                             <label for="option">Select your choice</label>
-                            <select class="custom-select custom-select-md mb-3" name="choice{{$data->id}}" required>
+                            <select class="custom-select custom-select-md mb-3" name="choice{{$loop->iteration}}" required>
                                 <option selected>Select answer</option>
                                 <option value="{{$data->correct_option}}">{{$data->correct_option}}</option>
                                 <option value="{{$data->other_option1}}">{{$data->other_option1}}</option>
