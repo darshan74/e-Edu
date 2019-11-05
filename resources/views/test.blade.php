@@ -28,7 +28,6 @@
                     @csrf
                         @if($data->isEmpty())
                             <h4> No Questions exist at the moment. </h4>
-                            <p style="color:red;"> Add questions using "QATableSeeder.php" and run "$php artisan db:seed" to enable this form. </p>
                             <script>
                             $(document).ready(function() {
                                $("#eval-form > .actions a, #submitButton").prop('disabled',true); 
@@ -37,7 +36,7 @@
                         @endif
                         @foreach($data as $data)
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Question {{$data->id}}</label>
+                            <label for="question_label">Question {{$loop->iteration}}</label>
                             <input type="text" class="form-control" id="question" name="question{{$data->id}}"
                                  value="{{$data->question}}" readonly>
                         </div>

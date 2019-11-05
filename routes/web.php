@@ -22,4 +22,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/test', 'HomeController@testCandidate')->name('start-test');
 
 // All POST routes
-Route::post('/test', 'HomeController@checkScore')->name('check-score');
+Route::post('/test/post', 'HomeController@checkScore')->name('check-score');
