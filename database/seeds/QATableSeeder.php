@@ -127,7 +127,7 @@ class QATableSeeder extends Seeder
             ],
             [
                 'subject' => 'Java',
-                'question' => ' Method Overriding is an example of',
+                'question' => 'Method Overriding is an example of',
                 'correct_option' => 'Dynamic Binding',
                 'other_option1' => 'Static Binding.',
                 'other_option2' => 'Both of the above',
