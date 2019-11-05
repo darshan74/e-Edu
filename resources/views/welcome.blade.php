@@ -85,12 +85,7 @@
                     {{config('app.name')}}
                 </div>
                 <div>
-                    {{config('app.key')}} <br>
-                    <h3> This indicates you're in develop branch. </h3>
-                </div>
-
-                <div class="links">
-                    
+                    <h3> Welcome to E edu. </h3>
                 </div>
             </div>
         </div>
