@@ -12,6 +12,7 @@ class QATableSeeder extends Seeder
      */
     public function run()
     {
+        DB::table('qa_db')->truncate();
         DB::table('qa_db')->insert([
 
             // Copy the below code to feed all questions in database.
