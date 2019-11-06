@@ -154,25 +154,24 @@ class HomeController extends Controller
         $array = array("Machine Learning"=>$ml_eval, "Data Structures"=>$dsa_eval, "Java"=>$java_eval);
         asort($array);
         $first_priority = array_key_first($array);
-        $f = (string)$first_priority;
         // dd($f);
 
         // Saving scores to db
-        // $score = new ScoresModel;
-        // // dd(auth()->user()->id);
-        // $score->uid = auth()->user()->id;
+        $score = new ScoresModel;
+        // dd(auth()->user()->id);
+        $score->uid = auth()->user()->id;
         
-        // $score->score_positive = $score;
-        // $score->ml_score_positive = $ml_score;
-        // $score->dsa_score_positive = $dsa_score;
-        // $score->java_score_positive = $java_score;
+        $score->score_positive = (string)$score;
+        $score->ml_score_positive = (string)$ml_score;
+        $score->dsa_score_positive = (string)$dsa_score;
+        $score->java_score_positive = (string)$java_score;
 
-        // $score->score_negative = $score_negative;
-        // $score->ml_score_negative = $ml_score_negative;
-        // $score->dsa_score_negative = $dsa_score_negative;
-        // $score->java_score_negative = $java_score_negative;
-        // $score->recommended_course = $f;
-        // $score->save();
-        return view('recommend')->with('data', $f); 
+        $score->score_negative = (string)$score_negative;
+        $score->ml_score_negative = (string)$ml_score_negative;
+        $score->dsa_score_negative = (string)$dsa_score_negative;
+        $score->java_score_negative = (string)$java_score_negative;
+        $score->recommended_course = (string)$first_priority;
+        $score->save();
+        return view('recommend')->with('data', $first_priority); 
     }
 }

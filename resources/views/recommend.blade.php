@@ -19,12 +19,27 @@
                 <div class="card-header">Course Recommendation</div>
 
                 <div class="card-body">
+                    <script>
+                        $(window).on('load', function () {
+                            setTimeout(function() {
+                                $(".se-pre-con").fadeOut("slow");
+                                $(".recom").fadeIn(500);
+                            }, 5000);
+                        });
+                    </script>
+                    <div class="se-pre-con">
+                        <h3> Please wait while we calculate your result and recommend courses for you. </h3>
+                        <img src="{{asset('preloader.gif')}}" alt="preloader" class="center">
+                    </div>
                     @if (session('status'))
                     <div class="alert alert-success" role="alert">
                         {{ session('status') }}
                     </div>
                     @endif
-                    <h3> Based on your current evaluation, the recommended course for you is <span style="color:red">{{$data}}.</span> </h3>
+                        <div class="recom" style="display:none;">
+                            <h3> Based on your current evaluation, the recommended course for you is <span
+                                style="color:red">{{$data}}.</span> </h3>
+                        </div>
                 </div>
             </div>
         </div>

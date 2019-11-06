@@ -17,15 +17,15 @@ class CreateScoresModelsTable extends Migration
             $table->bigIncrements('id');
             $table->bigInteger('uid')->unsigned();
             $table->foreign('uid')->references('id')->on('users');
-            $table->integer('score_positive');
-            $table->integer('ml_score_positive');
-            $table->integer('dsa_score_positive');
-            $table->integer('java_score_positive');
+            $table->string('score_positive');
+            $table->string('ml_score_positive');
+            $table->string('dsa_score_positive');
+            $table->string('java_score_positive');
 
-            $table->integer('score_negative');
-            $table->integer('ml_score_negative');
-            $table->integer('dsa_score_negative');
-            $table->integer('java_score_negative');
+            $table->string('score_negative');
+            $table->string('ml_score_negative');
+            $table->string('dsa_score_negative');
+            $table->string('java_score_negative');
             $table->string('recommended_course')->nullable();
             $table->timestamps();
         });
