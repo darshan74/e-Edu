@@ -7,15 +7,16 @@
         <title>{{config('app.name')}}</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
         <!-- Styles -->
+        <link rel="stylesheet" href="{{asset('css/particle.css')}}">
         <style>
             html, body {
-                background-color: #0a0a0a;
+                /* background-color: #0a0a0a; */
                 color: #fff;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 100;
                 height: 100vh;
                 margin: 0;
             }
@@ -51,11 +52,20 @@
             .links > a {
                 color: #fff ;
                 padding: 0 25px;
-                font-size: 13px;
+                font-size: 16px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
+            }
+
+            .welcome {
+                color: #fff ;
+                padding: 0 25px;
+                font-size: 20px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
             }
 
             .m-b-md {
@@ -64,6 +74,7 @@
         </style>
     </head>
     <body>
+        <div id="particles-js"></div>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -84,10 +95,14 @@
                 <div class="title m-b-md">
                     {{config('app.name')}}
                 </div>
-                <div>
-                    <h3> Welcome to E edu. </h3>
+                <div class="welcome">
+                    <p> Welcome to E edu. A Machine Learning based Educational System for you. </p>
                 </div>
             </div>
         </div>
     </body>
+
+    <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+    <script src='https://threejs.org/examples/js/libs/stats.min.js'></script>
+    <script src="{{asset('js/particle.js')}}"></script>
 </html>
