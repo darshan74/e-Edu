@@ -16,3 +16,20 @@ use Illuminate\Foundation\Inspiring;
 Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->describe('Display an inspiring quote');
+
+Artisan::command('psp', function () {
+    $this->comment('Hello PSP, I have something for you: ');
+    $this->comment(Inspiring::quote());
+})->describe('Hifi PSP');
+
+Artisan::command('magic', function () {
+    $this->comment('Please wait while PSP does the magic!');
+    shell_exec('composer install');
+    Artisan::call('migrate:fresh --seed');
+    Artisan::call('cache:clear');
+    Artisan::call('view:clear');
+    // Artisan::call('serve');
+    $this->comment('Abra Cadabra, magic is done');
+    $this->comment('Go ahead and run: php artisan serve now.');
+})->describe('does some magic');
+

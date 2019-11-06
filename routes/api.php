@@ -16,3 +16,7 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/send/{id}', function($id) {
+    return App\ScoresModel::find($id);
+})->name('send-data-to-api');

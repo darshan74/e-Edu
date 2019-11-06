@@ -142,6 +142,7 @@ class HomeController extends Controller
 
         // Saving scores to db
         $score = new ScoresModel;
+
         // dd(auth()->user()->id);
         $score->uid = auth()->user()->id;
         
