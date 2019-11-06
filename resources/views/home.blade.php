@@ -23,7 +23,7 @@
                         </div>
                     @endif
                     <button type="button" class="btn btn-success"> <a href="{{route('start-test')}}" style="color:white; text-decoration:none;">
-                    Start Q & A Evaluation </a> </button>
+                    <i class="fa fa-check" aria-hidden="true"></i> Start Q & A Evaluation </a> </button>
                 </div>
             </div>
         </div>

@@ -36,12 +36,12 @@
                         @endif
                         @foreach($data as $data)
                         <div class="form-group">
-                            <label for="question_label">Question {{$loop->iteration}}</label>
+                            <i class="fa fa-question-circle-o" aria-hidden="true"></i> <label for="question_label">Question {{$loop->iteration}}</label>
                             <input type="text" class="form-control" id="question" name="question{{$loop->iteration}}"
                                  value="{{$data->question}}" readonly>
                         </div>
                         <div class="form-group">
-                            <label for="option">Select your choice</label>
+                            <i class="fa fa-check-square-o" aria-hidden="true"></i> <label for="option">Select your choice</label>
                             <select class="custom-select custom-select-md mb-3" name="choice{{$loop->iteration}}" required>
                                 <option selected>Select answer</option>
                                 <option value="{{$data->correct_option}}">{{$data->correct_option}}</option>
@@ -52,7 +52,8 @@
                         </div>
                         @endforeach
                         <div class="form-group">
-                            <button type="submit" class="btn btn-success" id="submitButton">Check my score!</button>
+                            <button type="submit" class="btn btn-success" id="submitButton">
+                                <i class="fa fa-star" aria-hidden="true"></i> Check my score!</button>
                         </div>
                     </form>
                 </div>

@@ -16,7 +16,8 @@
 
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Course Recommendation</div>
+                <div class="card-header"><i class="fa fa-check-square-o" aria-hidden="true"></i>
+                 Course Recommendation</div>
 
                 <div class="card-body">
                     <script>
