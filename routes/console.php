@@ -38,6 +38,6 @@ Artisan::command('git', function () {
     shell_exec('git add .');
     shell_exec('git commit -m "magic commit" ');
     shell_exec('git push');
-    $this->comment('Sit back and relax');
-    $this->comment('Git pushed successfully!');
+    $this->comment('Sit back & relax,');
+    $this->comment('because Git pushed successfully!');
 })->describe('updates the remote repo');
