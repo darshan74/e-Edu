@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="{{asset('css/particle.css')}}">
         <style>
             html, body {
-                /* background-color: #0a0a0a; */
+                background-color: #b61924;
                 color: #fff;
                 font-family: 'Source Sans Pro', sans-serif;
                 font-weight: 100;
