@@ -22,6 +22,39 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
+    <!-- Preloader style, script and div -->
+    <style>
+    .no-js #loader { display: none;  }
+    .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+    .se-pre-con {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: url("/preloader.gif") center no-repeat #fff;
+    }    
+    </style>
+    <script>
+    // Jquery 3.14 works with below ONLY
+    $(window).on('load', function () {
+        // Animate loader off screen
+        console.log('ready');
+		$(".se-pre-con").fadeOut("slow");
+    });
+    // old jquery works with below so removed.
+
+    // $(window).load(function() {
+	// 	// Animate loader off screen
+    //     console.log('ready');
+	// 	$(".se-pre-con").fadeOut("slow");
+    //     $(".se-pre-con").hide();
+	// });
+    
+    </script>
+    <div class="se-pre-con"></div>
+
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">

@@ -22,12 +22,12 @@
                     <script>
                         $(window).on('load', function () {
                             setTimeout(function() {
-                                $(".se-pre-con").fadeOut("slow");
+                                $(".wait").fadeOut("slow");
                                 $(".recom").fadeIn(500);
                             }, 5000);
                         });
                     </script>
-                    <div class="se-pre-con">
+                    <div class="wait">
                         <h3> Please wait while we calculate your result and recommend courses for you. </h3>
                         <img src="{{asset('preloader.gif')}}" alt="preloader" class="center">
                     </div>
