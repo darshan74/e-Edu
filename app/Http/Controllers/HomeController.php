@@ -65,7 +65,6 @@ class HomeController extends Controller
                 'ml'   => $ml_questions,
                 'java' => $java_questions
             ];
-            // return view('test')->with(compact('dsa_questions', 'ml_questions', 'java_questions'));
             return view('test')->with('data', $test_questions);
         }
     }
@@ -91,12 +90,10 @@ class HomeController extends Controller
         }
         $question_array = array_values($q);
         $answer_array = array_values($a);
-        // echo $question_array[0];
-        // echo $answer_array[0];
 
         $newindex = 0; // for answers array
         //Positive Scores
-        $score = 0;
+        $score_positive = 0;
         $dsa_score = 0;
         $ml_score = 0;
         $java_score = 0;
@@ -107,19 +104,16 @@ class HomeController extends Controller
         $ml_score_negative = 0;
         $java_score_negative = 0;
 
-        // dd($question_array);
         foreach($question_array as $question_array) {
             $question = QAModel::where('question', $question_array)->first();
             if($question) {
-                // dd($question->correct_option == $answer_array[$newindex]);
                 if ($question->correct_option == $answer_array[$newindex]) {
-                    $score += 5;
+                    $score_positive += 5;
                     $subject = $question->subject;
                     if ($subject === 'DSA') { $dsa_score += 5; }
                     else if ($subject === 'ML') { $ml_score += 5; }
                     else if ($subject === 'Java') { $java_score += 5; }
                     else {Session::flash('message', 'One Subject not found'); } 
-                    // echo $score;
                 }
                 else {
                     $score_negative -= 5;
@@ -136,15 +130,6 @@ class HomeController extends Controller
                 Session::flash('message', 'One question not found. check db for errors'); 
             }
         }
-        // echo 'Total Score = '.$score.' ';
-        // echo 'ML = '.$ml_score.' ';
-        // echo 'DSA = '.$dsa_score.' ';
-        // echo 'Java = '.$java_score.' ';
-
-        // echo 'Total Score = '.$score_negative.' ';
-        // echo 'ML = '.$ml_score_negative.' ';
-        // echo 'DSA = '.$dsa_score_negative.' ';
-        // echo 'Java = '.$java_score_negative.' ';
 
         // Recommending Courses
         $ml_eval = ($ml_score + $ml_score_negative)/2;
@@ -154,14 +139,13 @@ class HomeController extends Controller
         $array = array("Machine Learning"=>$ml_eval, "Data Structures"=>$dsa_eval, "Java"=>$java_eval);
         asort($array);
         $first_priority = array_key_first($array);
-        // dd($f);
 
         // Saving scores to db
         $score = new ScoresModel;
         // dd(auth()->user()->id);
         $score->uid = auth()->user()->id;
         
-        $score->score_positive = (string)$score;
+        $score->score_positive = (string)$score_positive;
         $score->ml_score_positive = (string)$ml_score;
         $score->dsa_score_positive = (string)$dsa_score;
         $score->java_score_positive = (string)$java_score;
