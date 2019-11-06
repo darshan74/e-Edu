@@ -33,3 +33,11 @@ Artisan::command('magic', function () {
     $this->comment('Go ahead and run: php artisan serve now.');
 })->describe('does some magic');
 
+Artisan::command('git', function () {
+    $this->comment('Git can be hard sometimes, relax');
+    shell_exec('git add .');
+    shell_exec('git commit -m "magic commit" ');
+    shell_exec('git push');
+    $this->comment('Sit back and relax');
+    $this->comment('Git pushed successfully!');
+})->describe('updates the remote repo');
