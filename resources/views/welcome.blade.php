@@ -96,7 +96,7 @@
                     {{config('app.name')}}
                 </div>
                 <div class="welcome">
-                    <p> Welcome to E edu. A Machine Learning based Educational System for you. </p>
+                    <p> Welcome to e-Edu. A Machine Learning based Educational System for you. </p>
                 </div>
             </div>
         </div>
