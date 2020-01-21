@@ -24,6 +24,7 @@ class CreateQAModelsTable extends Migration
             $table->string('answer_explanation')->nullable();
             $table->string('answer_diagram')->nullable();
             $table->string('subject_solve_rate')->default(0);
+            $table->string('level');
             $table->timestamps();
         });
     }

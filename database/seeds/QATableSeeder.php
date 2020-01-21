@@ -25,6 +25,7 @@ class QATableSeeder extends Seeder
             'other_option3' => 'None of the above',
             'answer_explanation' => 'Input some sense here please',
             'answer_diagram' => 'Not available',
+            'level' => 'Basic',
             ],
             [
             'subject' => 'DSA',
@@ -35,6 +36,7 @@ class QATableSeeder extends Seeder
             'other_option3' => 'n2 log n',
             'answer_explanation' => 'Input some sense here please',
             'answer_diagram' => 'Not available',
+            'level' => 'High',
             ],
             [
                 'subject' => 'DSA',
@@ -45,6 +47,7 @@ class QATableSeeder extends Seeder
                 'other_option3' => 'None of the above',
                 'answer_explanation' => 'Input some sense here please',
                 'answer_diagram' => 'Not available',
+                'level' => 'Medium',
             ],
             [
                 'subject' => 'DSA',
@@ -55,6 +58,7 @@ class QATableSeeder extends Seeder
                 'other_option3' => ' 2Ο(n)',
                 'answer_explanation' => 'Input some sense here please',
                 'answer_diagram' => 'Not available',
+                'level' => 'Basic',
             ],
             [
                 'subject' => 'DSA',
@@ -65,6 +69,7 @@ class QATableSeeder extends Seeder
                 'other_option3' => 'Dequeue',
                 'answer_explanation' => 'Input some sense here please',
                 'answer_diagram' => 'Not available',
+                'level' => 'Basic',
             ],
             [
                 'subject' => 'DSA',
@@ -75,6 +80,7 @@ class QATableSeeder extends Seeder
                 'other_option3' => 'Algorithms',
                 'answer_explanation' => 'Input some sense here please',
                 'answer_diagram' => 'Not available',
+                'level' => 'Medium',
             ],
             [
                 'subject' => 'DSA',
@@ -85,6 +91,7 @@ class QATableSeeder extends Seeder
                 'other_option3' => 'Both AVL tree and Red-black tree',
                 'answer_explanation' => 'Input some sense here please',
                 'answer_diagram' => 'Not available',
+                'level' => 'Medium',
             ],
             [
                 'subject' => 'ML',
@@ -95,6 +102,7 @@ class QATableSeeder extends Seeder
                 'other_option3' => 'The selective acquisition of knowledge through the use of manual programs',
                 'answer_explanation' => 'Input some sense here please',
                 'answer_diagram' => 'Not available',
+                'level' => 'Basic',
             ],
             [
                 'subject' => 'ML',
@@ -105,6 +113,7 @@ class QATableSeeder extends Seeder
                 'other_option3' => 'None of these.',
                 'answer_explanation' => 'Input some sense here please',
                 'answer_diagram' => 'Not available',
+                'level' => 'Medium',
             ],
             [
                 'subject' => 'ML',
@@ -115,6 +124,7 @@ class QATableSeeder extends Seeder
                 'other_option3' => 'None of these',
                 'answer_explanation' => 'Input some sense here please',
                 'answer_diagram' => 'Not available',
+                'level' => 'Basic',
             ],
             [
                 'subject' => 'ML',
@@ -125,6 +135,7 @@ class QATableSeeder extends Seeder
                 'other_option3' => '3',
                 'answer_explanation' => 'Input some sense here please',
                 'answer_diagram' => 'Not available',
+                'level' => 'Basic',
             ],
             [
                 'subject' => 'Java',
@@ -135,6 +146,7 @@ class QATableSeeder extends Seeder
                 'other_option3' => 'None of the above',
                 'answer_explanation' => 'Input some sense here please',
                 'answer_diagram' => 'Not available',
+                'level' => 'Basic',
             ],
             [
                 'subject' => 'Java',
@@ -145,6 +157,7 @@ class QATableSeeder extends Seeder
                 'other_option3' => '.Exe',
                 'answer_explanation' => 'Input some sense here please',
                 'answer_diagram' => 'Not available',
+                'level' => 'Basic',
             ],
             [
                 'subject' => 'Java',
@@ -155,6 +168,7 @@ class QATableSeeder extends Seeder
                 'other_option3' => 'java',
                 'answer_explanation' => 'Input some sense here please',
                 'answer_diagram' => 'Not available',
+                'level' => 'Basic',
             ],
             [
                 'subject' => 'Java',
@@ -165,6 +179,7 @@ class QATableSeeder extends Seeder
                 'other_option3' => 'rmic',
                 'answer_explanation' => 'Input some sense here please',
                 'answer_diagram' => 'Not available',
+                'level' => 'Medium',
             ],
             [
                 'subject' => 'Java',
@@ -175,6 +190,7 @@ class QATableSeeder extends Seeder
                 'other_option3' => 'appletshow',
                 'answer_explanation' => 'Input some sense here please',
                 'answer_diagram' => 'Not available',
+                'level' => 'High',
             ],
             [
                 'subject' => 'Java',
@@ -185,6 +201,7 @@ class QATableSeeder extends Seeder
                 'other_option3' => 'javahelp',
                 'answer_explanation' => 'Input some sense here please',
                 'answer_diagram' => 'Not available',
+                'level' => 'Medium',
             ],
             [
                 'subject' => 'Java',
@@ -195,6 +212,7 @@ class QATableSeeder extends Seeder
                 'other_option3' => 'none of these',
                 'answer_explanation' => 'Input some sense here please',
                 'answer_diagram' => 'Not available',
+                'level' => 'Basic',
             ],
         ]);
     }
