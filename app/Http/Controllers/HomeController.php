@@ -41,8 +41,14 @@ class HomeController extends Controller
             ['subject','=','Java'],
         ])->get(); // This will check whether Questions with all categories exist
 
+        $all_levels_exist = DB::table('qa_db')->where([
+            ['level','=','Basic'],
+            ['level','=','Medium'],
+            ['level','=','High'],
+        ])->get(); //This will check whether questions with all level exist
+
         // if all category doesn't exist, get any questions
-        if($all_categories_exist->isEmpty()) {
+        if($all_categories_exist and $all_levels_exist->isEmpty()) {
             $any_questions = QAModel::all()->random()->get();
             $total = count($any_questions);
             // if total number of question is less than 9, get them ALL!
@@ -57,15 +63,24 @@ class HomeController extends Controller
         }
         
         else {
-            $dsa_questions = QAModel::all()->random(3)->where('subject', 'DSA');
-            $ml_questions = QAModel::all()->random(3)->where('subject', 'ML');
-            $java_questions = QAModel::all()->random(3)->where('subject', 'Java');
+            $dsa_questions = QAModel::all()->random(1)->where('subject', 'DSA')->where('level','Basic');
+            $dsa_questions1 = QAModel::all()->random(1)->where('subject', 'DSA')->where('level','Medium');
+            $dsa_questions2 = QAModel::all()->random(1)->where('subject', 'DSA')->where('level','High');
+            $ml_questions = QAModel::all()->random(1)->where('subject', 'ML')->where('level','Basic');
+            $ml_questions1 = QAModel::all()->random(1)->where('subject', 'ML')->where('level','Medium');
+            $ml_questions = QAModel::all()->random(1)->where('subject', 'ML')->where('level','High');
+            $java_questions = QAModel::all()->random(1)->where('subject', 'Java')->where('level','Basic');
+            $java_questions1 = QAModel::all()->random(1)->where('subject', 'Java')->where('level','Medium');
+            $java_questions2 = QAModel::all()->random(1)->where('subject', 'Java')->where('level','High');
+
             $test_questions = [
                 'dsa'  => $dsa_questions,
-                'ml'   => $ml_questions,
+                'ml'   => $ml_questions, 
                 'java' => $java_questions
             ];
             return view('test')->with('data', $test_questions);
+
+            
         }
     }
 
