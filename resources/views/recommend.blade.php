@@ -39,7 +39,10 @@
                     @endif
                         <div class="recom" style="display:none;">
                             <h3> Based on your current evaluation, the recommended course for you is <span
-                                style="color:red">{{$data}}.</span> </h3>
+                                style="color:red">@foreach ($data as $key => $value)
+                                                     {{ $key }}    
+                                                     Score :{{ $value }}
+                                                    @endforeach.</span> </h3>
                         </div>
                 </div>
             </div>

@@ -63,15 +63,10 @@ class HomeController extends Controller
         }
         
         else {
-            $dsa_questions = QAModel::all()->random(1)->where('subject', 'DSA')->where('level','Basic');
-            $dsa_questions1 = QAModel::all()->random(1)->where('subject', 'DSA')->where('level','Medium');
-            $dsa_questions2 = QAModel::all()->random(1)->where('subject', 'DSA')->where('level','High');
-            $ml_questions = QAModel::all()->random(1)->where('subject', 'ML')->where('level','Basic');
-            $ml_questions1 = QAModel::all()->random(1)->where('subject', 'ML')->where('level','Medium');
-            $ml_questions = QAModel::all()->random(1)->where('subject', 'ML')->where('level','High');
-            $java_questions = QAModel::all()->random(1)->where('subject', 'Java')->where('level','Basic');
-            $java_questions1 = QAModel::all()->random(1)->where('subject', 'Java')->where('level','Medium');
-            $java_questions2 = QAModel::all()->random(1)->where('subject', 'Java')->where('level','High');
+            $dsa_questions= QAModel::all()->random(3)->where('subject', 'DSA');
+            $ml_questions=QAModel::all()->random(3)->where('subject','ML');
+            $java_questions= QAModel::all()->random(3)->where('subject','Java');
+
 
             $test_questions = [
                 'dsa'  => $dsa_questions,
@@ -125,17 +120,30 @@ class HomeController extends Controller
                 if ($question->correct_option == $answer_array[$newindex]) {
                     $score_positive += 5;
                     $subject = $question->subject;
-                    if ($subject === 'DSA') { $dsa_score += 5; }
-                    else if ($subject === 'ML') { $ml_score += 5; }
-                    else if ($subject === 'Java') { $java_score += 5; }
+                    $subject_level = $question->level;
+                    if ($subject === 'DSA' and $subject_level==='Basic') { $dsa_score += 5; }
+                    else if ($subject === 'DSA' and $subject_level==='Medium') { $dsa_score += 10; }
+                    else if ($subject === 'DSA' and $subject_level==='High') { $dsa_score += 15; }
+                    else if ($subject === 'ML' and $subject_level ==='Basic') { $ml_score += 5; }
+                    else if ($subject === 'ML' and $subject_level ==='Medium') { $ml_score += 10; }
+                    else if ($subject === 'ML' and $subject_level ==='High') { $ml_score += 15; }
+                    else if ($subject === 'Java'and $subject_level === 'Basic') { $java_score += 5; }
+                    else if ($subject === 'Java'and $subject_level === 'Medium') { $java_score += 10; }
+                    else if ($subject === 'Java'and $subject_level === 'High') { $java_score += 15; }
                     else {Session::flash('message', 'One Subject not found'); } 
                 }
                 else {
                     $score_negative -= 5;
                     $subject = $question->subject;
-                    if ($subject === 'DSA') { $dsa_score_negative -= 5; }
-                    else if ($subject === 'ML') { $ml_score_negative -= 5; }
-                    else if ($subject === 'Java') { $java_score_negative -= 5; }
+                    if ($subject === 'DSA' and $subject_level==='Basic') { $dsa_score -= 5; }
+                    else if ($subject === 'DSA' and $subject_level==='Medium') { $dsa_score -= 10; }
+                    else if ($subject === 'DSA' and $subject_level==='High') { $dsa_score -= 15; }
+                    else if ($subject === 'ML' and $subject_level ==='Basic') { $ml_score -= 5; }
+                    else if ($subject === 'ML' and $subject_level ==='Medium') { $ml_score -= 10; }
+                    else if ($subject === 'ML' and $subject_level ==='High') { $ml_score -= 15; }
+                    else if ($subject === 'Java'and $subject_level === 'Basic') { $java_score -= 5; }
+                    else if ($subject === 'Java'and $subject_level === 'Medium') { $java_score -= 10; }
+                    else if ($subject === 'Java'and $subject_level === 'High') { $java_score -= 15; }
                     else {Session::flash('message', 'One Subject not found'); } 
                 }
                 $newindex++; // To increment answers array
@@ -153,8 +161,10 @@ class HomeController extends Controller
 
         $array = array("Machine Learning"=>$ml_eval, "Data Structures"=>$dsa_eval, "Java"=>$java_eval);
         asort($array);
-        $first_priority = array_key_first($array);
-
+        $first_priority = array_key_last($array);
+        $first_priority_key = last($array);
+        //dd($first_priority_key);
+        $view_array= array($first_priority=>$first_priority_key);
         // Saving scores to db
         $score = new ScoresModel;
 
@@ -172,6 +182,8 @@ class HomeController extends Controller
         $score->java_score_negative = (string)$java_score_negative;
         $score->recommended_course = (string)$first_priority;
         $score->save();
-        return view('recommend')->with('data', $first_priority); 
+        return view('recommend')->with('data', $view_array);
+        // return view('recommend')->with('data', $first_priority_key);
+        
     }
 }
