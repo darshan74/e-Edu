@@ -135,6 +135,7 @@ class HomeController extends Controller
                 else {
                     $score_negative -= 5;
                     $subject = $question->subject;
+                    $subject_level = $question->level;
                     if ($subject === 'DSA' and $subject_level==='Basic') { $dsa_score -= 5; }
                     else if ($subject === 'DSA' and $subject_level==='Medium') { $dsa_score -= 10; }
                     else if ($subject === 'DSA' and $subject_level==='High') { $dsa_score -= 15; }

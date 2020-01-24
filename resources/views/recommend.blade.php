@@ -42,7 +42,15 @@
                                 style="color:red">@foreach ($data as $key => $value)
                                                      {{ $key }}    
                                                      Score :{{ $value }}
-                                                    @endforeach.</span> </h3>
+                                                    @endforeach.
+                                                    @if ($value <= 10)
+                                                        Basic
+                                                    @elseif ($value > 10 && $value <= 15)
+                                                        Medium
+                                                    @elseif ($value > 15 && $value <= 20)
+                                                        High
+                                                        @endif
+                                                    </span> </h3>
                         </div>
                 </div>
             </div>
