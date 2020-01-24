@@ -48,7 +48,7 @@ class HomeController extends Controller
         ])->get(); //This will check whether questions with all level exist
 
         // if all category doesn't exist, get any questions
-        if($all_categories_exist and $all_levels_exist->isEmpty()) {
+        if($all_categories_exist->isEmpty()) {
             $any_questions = QAModel::all()->random()->get();
             $total = count($any_questions);
             // if total number of question is less than 9, get them ALL!

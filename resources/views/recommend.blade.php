@@ -47,7 +47,7 @@
                                                         Basic
                                                     @elseif ($value > 10 && $value <= 15)
                                                         Medium
-                                                    @elseif ($value > 15 && $value <= 20)
+                                                    @elseif ($value > 15 && $value <= 25)
                                                         High
                                                         @endif
                                                     </span> </h3>
