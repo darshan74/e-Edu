@@ -41,14 +41,14 @@
                             <h3>Recommended Course: <span
                                 style="color:red">@foreach ($data as $key => $value)
                                                      {{ $key }}</span>    
-                                                     <br>Score :<span style="color:red">{{ $value }}</span></br>
+                                                     <br>Score: <span style="color:red">{{ $value }}</span></br>
                                                     @endforeach
                                                     @if ($value <= 10)
-                                                        Level:<span style="color:red">Basic</span>
+                                                        Level: <span style="color:red">Basic</span>
                                                     @elseif ($value > 10 && $value <= 15)
-                                                        Level:<span style="color:red">Medium</span>
+                                                        Level: <span style="color:red">Medium</span>
                                                     @elseif ($value > 15 && $value <= 25)
-                                                        Level:High<span style="color:red">High</span>.
+                                                        Level: <span style="color:red">High</span>
                                                         @endif
                                                     </h3>
                         </div>
