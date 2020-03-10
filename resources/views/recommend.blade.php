@@ -45,9 +45,9 @@
                                                     @endforeach
                                                     @if ($value <= 10)
                                                         Level: <span style="color:red">Basic</span>
-                                                    @elseif ($value > 10 && $value <= 15)
+                                                    @elseif ($value > 10 && $value <= 20)
                                                         Level: <span style="color:red">Medium</span>
-                                                    @elseif ($value > 15 && $value <= 25)
+                                                    @elseif ($value > 20 && $value <= 30)
                                                         Level: <span style="color:red">High</span>
                                                         @endif
                                                     </h3>
