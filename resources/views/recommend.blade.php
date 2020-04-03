@@ -49,7 +49,7 @@
                                                         Level: <span style="color:red">Medium</span>
                                                     @elseif ($value > 20 && $value <= 30)
                                                         Level: <span style="color:red">High</span>
-                                                        @endif
+                                                    @endif
                                                     </h3>
                         </div>
                 </div>
