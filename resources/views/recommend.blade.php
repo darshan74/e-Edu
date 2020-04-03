@@ -51,10 +51,16 @@
                                                         Level: <span style="color:red">High</span>
                                                     @endif
                                                     </h3>
+                    <form action="{{route('video')}}" method="post">
+                        <div class="recom" style="display:none;">
+                        <button type="submit" class="btn btn-success" id="submitButton">
+                        <i class="fa fa-star" aria-hidden="true"></i>NEXT</button>
                         </div>
                 </div>
             </div>
         </div>
+        </div>
+        </form>
     </div>
 
 

@@ -167,15 +167,15 @@ class HomeController extends Controller
         switch ($first_priority) {
             case "Java":
                 $view_java=array('java_eq'=>$java_eq,'CJB'=>$CJB,'CJM'=>$CJM,'CJH'=>$CJH,'avg'=>$first_priority_key);
-                echo '<pre>'; print_r($view_java); echo '</pre>';
+                #echo '<pre>'; print_r($view_java); echo '</pre>';
             break;
             case "Data Structures":
                 $view_dsa=array('dsa_eq'=>$data_struct_eq,'CDB'=>$CDB,'CDM'=>$CDM,'CDH'=>$CDH,'avg'=>$first_priority_key);
-                echo '<pre>'; print_r($view_dsa); echo '</pre>';
+                #echo '<pre>'; print_r($view_dsa); echo '</pre>';
             break;
             case "Machine Learning":
                 $view_ml=array('ml_eq'=>$ml_eq,'CMB'=>$CMB,'CMM'=>$CMM,'CMH'=>$CMH,'avg'=>$first_priority_key);
-                echo '<pre>'; print_r($view_ml); echo '</pre>';
+                #echo '<pre>'; print_r($view_ml); echo '</pre>';
             break;
             default:
             echo "Retest";
