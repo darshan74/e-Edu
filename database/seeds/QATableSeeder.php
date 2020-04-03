@@ -489,6 +489,17 @@ class QATableSeeder extends Seeder
                 'answer_diagram' => 'Not available',
                 'level' => 'Medium',
             ],
+            [
+                'subject' => 'Java',
+                'question' => 'Which edition of java is used for developing web application?',
+                'correct_option' => 'J2EE',
+                'other_option1' => 'J2ME',
+                'other_option2' => 'J2SE',
+                'other_option3' => 'All these options',
+                'answer_explanation' => 'Input some sense here please',
+                'answer_diagram' => 'Not available',
+                'level' => 'Medium',
+            ],
         ]);
     }
 }
