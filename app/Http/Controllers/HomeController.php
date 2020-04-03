@@ -141,21 +141,7 @@ class HomeController extends Controller
                     else if ($subject === 'Java'and $subject_level === 'High') { $java_score += 15; $CJH +=1; }
                     else {Session::flash('message', 'One Subject not found'); } 
                 }
-                /*else {
-                    $score_negative -= 5;
-                    $subject = $question->subject;
-                    $subject_level = $question->level;
-                    if ($subject === 'DSA' and $subject_level==='Basic') { $dsa_score -= 5; }
-                    else if ($subject === 'DSA' and $subject_level==='Medium') { $dsa_score -= 10; }
-                    else if ($subject === 'DSA' and $subject_level==='High') { $dsa_score -= 15; }
-                    else if ($subject === 'ML' and $subject_level ==='Basic') { $ml_score -= 5; }
-                    else if ($subject === 'ML' and $subject_level ==='Medium') { $ml_score -= 10; }
-                    else if ($subject === 'ML' and $subject_level ==='High') { $ml_score -= 15; }
-                    else if ($subject === 'Java'and $subject_level === 'Basic') { $java_score -= 5; }
-                    else if ($subject === 'Java'and $subject_level === 'Medium') { $java_score -= 10; }
-                    else if ($subject === 'Java'and $subject_level === 'High') { $java_score -= 15; }
-                    else {Session::flash('message', 'One Subject not found'); } 
-                }*/
+                
                 $newindex++; // To increment answers array
             }
             else {
@@ -163,7 +149,7 @@ class HomeController extends Controller
                 Session::flash('message', 'One question not found. check db for errors'); 
             }
         }
-        
+
         $ml_eval = ($ml_score)/3;
         $dsa_eval = ($dsa_score)/3;
         $java_eval = ($java_score)/3;
@@ -216,8 +202,7 @@ class HomeController extends Controller
         $score->average_score = (float)$first_priority_key;
         $score->java_eq = (integer)$java_eq;
         $score->dsa_eq = (integer)$data_struct_eq;
-        $score->ml_eq = (integer)$ml_eq;
-
+        $score->ml_eq = (integer)$ml_eq; 
         $score->recommended_course = (string)$first_priority;
         $score->save();
         return view('recommend')->with('data', $view_array);
