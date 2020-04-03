@@ -57,7 +57,7 @@ class VTableSeeder extends Seeder
                 'url' => '\storage\app\public\DSA2.mp4',
             ],
             [
-                'Type' => 'DSA Medium',
+                'Type' => 'DSA Basic',
                 'url' => '\storage\app\public\DSA3.mp4',
             ],
             [
@@ -65,12 +65,24 @@ class VTableSeeder extends Seeder
                 'url' => '\storage\app\public\DSA4.mp4',
             ],
             [
-                'Type' => 'DSA High',
+                'Type' => 'DSA Medium',
                 'url' => '\storage\app\public\DSA5.mp4',
             ],
             [
-                'Type' => 'DSA High',
+                'Type' => 'DSA Medium',
                 'url' => '\storage\app\public\DSA6.mp4',
+            ],
+            [
+                'Type' => 'DSA High',
+                'url' => '\storage\app\public\DSA7.mp4',
+            ],
+            [
+                'Type' => 'DSA High',
+                'url' => '\storage\app\public\DSA8.mp4',
+            ],
+            [
+                'Type' => 'DSA High',
+                'url' => '\storage\app\public\DSA9.mp4',
             ],
             [
                 'Type' => 'ML Basic',

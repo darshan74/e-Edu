@@ -54,7 +54,7 @@
                     <form action="{{route('video')}}" method="post">
                         <div class="recom" style="display:none;">
                         <button type="submit" class="btn btn-success" id="submitButton">
-                        <i class="fa fa-star" aria-hidden="true"></i>NEXT</button>
+                        NEXT<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
                         </div>
                 </div>
             </div>
