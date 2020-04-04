@@ -207,6 +207,7 @@ class HomeController extends Controller
         $score->save();
         return view('recommend')->with('data', $view_array);
         // return view('recommend')->with('data', $first_priority_key);
+        return Controllers('VideoController')->with('data',$view_array);
         
     }
 }
