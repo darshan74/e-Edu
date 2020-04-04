@@ -37,8 +37,7 @@
                         {{ session('status') }}
                     </div>
                     @endif
-                    <form action="{{route('video')}}" method="post">
-                    @csrf
+
                         <div class="recom" style="display:none;">
                             <h3>Recommended Course: <span
                                 style="color:red">@foreach ($data as $key => $value)
@@ -53,8 +52,10 @@
                                                         Level: <span style="color:red">High</span>
                                                     @endif
                             </h3>
-                                                    <input type="hidden" name="dta" value={{$key}}>
-                                                    <input type="hidden" name="dta1" value={{$value}}>
+                                                    <form action="{{route('video')}}" method="post">
+                                                    @csrf
+                                                    <input type="hidden" name="dta" value={{$key}} />
+                                                    <input type="hidden" name="dta1" value={{$value}}/>
                                                     <div class="recom" style="display:none;">
                                                         <button type="submit" class="btn btn-success" id="submitButton">
                                                         NEXT<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
