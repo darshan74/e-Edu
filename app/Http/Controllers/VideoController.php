@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Arr;
 use App\ScoresModel;
 use App\QAModel;
 use App\video_table;
@@ -34,7 +35,10 @@ class VideoController extends Controller
      public function getVideo(Request $request)
      {
          $reponse = $request->all();
-         dd($reponse);
+         $data1=Arr::get($reponse, 'dta');
+         $data2=Arr::get($reponse,'dta1');
+         echo $data1;
+         echo $data2;
      } 
 }
 
