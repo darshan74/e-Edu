@@ -18,111 +18,111 @@ class VTableSeeder extends Seeder
             // Copy the below code to feed all questions in database.
             [
                 'Type' => 'Java Basic',
-                'url' => '\storage\app\public\JavaTutorial1.mp4',
+                'url' => 'JavaTutorial1.mp4',
             ],
             [
                 'Type' => 'Java Basic',
-                'url' => '\storage\app\public\JavaTutorial2.mp4',
+                'url' => 'JavaTutorial2.mp4',
             ],
             [
                 'Type' => 'Java Basic',
-                'url' => '\storage\app\public\JavaTutorial3.mp4',
+                'url' => 'JavaTutorial3.mp4',
             ],
             [
                 'Type' => 'Java Medium',
-                'url' => '\storage\app\public\JavaTutorial4.mp4',
+                'url' => 'JavaTutorial4.mp4',
             ],
             [
                 'Type' => 'Java Medium',
-                'url' => '\storage\app\public\JavaTutorial5.mp4',
+                'url' => 'JavaTutorial5.mp4',
             ],
             [
                 'Type' => 'Java Medium',
-                'url' => '\storage\app\public\JavaTutorial6.mp4',
+                'url' => 'JavaTutorial6.mp4',
             ],
             [
                 'Type' => 'Java High',
-                'url' => '\storage\app\public\JavaTutorial7.mp4',
+                'url' => 'JavaTutorial7.mp4',
             ],
             [
                 'Type' => 'Java High',
-                'url' => '\storage\app\public\JavaTutorial8.mp4',
+                'url' => 'JavaTutorial8.mp4',
             ],
             [
                 'Type' => 'DSA Basic',
-                'url' => '\storage\app\public\DSA1.mp4',
+                'url' => 'DSA1.mp4',
             ],
             [
                 'Type' => 'DSA Basic',
-                'url' => '\storage\app\public\DSA2.mp4',
+                'url' => 'DSA2.mp4',
             ],
             [
                 'Type' => 'DSA Basic',
-                'url' => '\storage\app\public\DSA3.mp4',
+                'url' => 'DSA3.mp4',
             ],
             [
                 'Type' => 'DSA Medium',
-                'url' => '\storage\app\public\DSA4.mp4',
+                'url' => 'DSA4.mp4',
             ],
             [
                 'Type' => 'DSA Medium',
-                'url' => '\storage\app\public\DSA5.mp4',
+                'url' => 'DSA5.mp4',
             ],
             [
                 'Type' => 'DSA Medium',
-                'url' => '\storage\app\public\DSA6.mp4',
+                'url' => 'DSA6.mp4',
             ],
             [
                 'Type' => 'DSA High',
-                'url' => '\storage\app\public\DSA7.mp4',
+                'url' => 'DSA7.mp4',
             ],
             [
                 'Type' => 'DSA High',
-                'url' => '\storage\app\public\DSA8.mp4',
+                'url' => 'DSA8.mp4',
             ],
             [
                 'Type' => 'DSA High',
-                'url' => '\storage\app\public\DSA9.mp4',
+                'url' => 'DSA9.mp4',
             ],
             [
                 'Type' => 'ML Basic',
-                'url' => '\storage\app\public\ML1.mp4',
+                'url' => 'ML1.mp4',
             ],
             [
                 'Type' => 'ML Basic',
-                'url' => '\storage\app\public\ML2.mp4',
+                'url' => 'ML2.mp4',
             ],
             [
                 'Type' => 'ML Basic',
-                'url' => '\storage\app\public\ML3.mp4',
+                'url' => 'ML3.mp4',
             ],
             [
                 'Type' => 'ML Medium',
-                'url' => '\storage\app\public\ML4.mp4',
+                'url' => 'ML4.mp4',
             ],
             [
                 'Type' => 'ML Medium',
-                'url' => '\storage\app\public\ML5.mp4',
+                'url' => 'ML5.mp4',
             ],
             [
                 'Type' => 'ML Medium',
-                'url' => '\storage\app\public\ML6.mp4',
+                'url' => 'ML6.mp4',
             ],
             [
                 'Type' => 'ML High',
-                'url' => '\storage\app\public\ML7.mp4',
+                'url' => 'ML7.mp4',
             ],
             [
                 'Type' => 'ML High',
-                'url' => '\storage\app\public\ML8-1.mp4',
+                'url' => 'ML8-1.mp4',
             ],
             [
                 'Type' => 'ML High',
-                'url' => '\storage\app\public\ML8-2.mp4',
+                'url' => 'ML8-2.mp4',
             ],
             [
                 'Type' => 'ML High',
-                'url' => '\storage\app\public\ML9.mp4',
+                'url' => 'ML9.mp4',
             ],
         ]);
     }
