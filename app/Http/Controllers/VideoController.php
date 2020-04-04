@@ -65,9 +65,8 @@ class VideoController extends Controller
         $model = new video_table;
 
         $video = DB::table('video_tables')->select('url', )->where([['Type', '=', $data],])->get();
-        dd($video);
-
-
+        //dd($video);
+        return view('video')->with('data', $video);
 
 
     }
