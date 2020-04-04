@@ -33,12 +33,43 @@ class VideoController extends Controller
         return view('home');
     }
      public function getVideo(Request $request)
-     {
+    {
          $reponse = $request->all();
-         $data1=Arr::get($reponse, 'dta');
-         $data2=Arr::get($reponse,'dta1');
-         echo $data1;
-         echo $data2;
-     } 
+         $subject=Arr::get($reponse, 'dta');
+         $score=Arr::get($reponse,'dta1');
+         #echo $subject;
+         #echo $score;
+        if ($score <= 10) {
+            $Level = 'Basic';
+        }
+        elseif ($score > 10 && $score <= 20) {
+            $Level = 'Medium';
+        }
+        elseif ($score > 20 && $score <= 30) {
+            $Level = 'High';
+        }
+
+        if ($subject == 'Machine') {
+            $sub = 'ML';
+        }
+        elseif ($subject == 'Data') {
+            $sub = 'DSA';
+        }
+        elseif ($subject == 'Java') {
+            $sub = 'Java';
+        }
+
+        $data = $sub . ' ' . $Level;
+        //echo $data;
+
+        $model = new video_table;
+
+        $video = DB::table('video_tables')->select('url', )->where([['Type', '=', $data],])->get();
+        dd($video);
+
+
+
+
+    }
 }
 
