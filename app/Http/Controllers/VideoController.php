@@ -33,7 +33,8 @@ class VideoController extends Controller
     }
      public function getVideo(Request $request)
      {
-         dd($request);
+         $reponse = $request->all();
+         dd($reponse);
      } 
 }
 

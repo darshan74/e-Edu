@@ -54,8 +54,10 @@
                             </h3>
                                                     <form action="{{route('video')}}" method="post">
                                                     @csrf
-                                                    <input type="hidden" name="dta" value={{$key}} />
-                                                    <input type="hidden" name="dta1" value={{$value}}/>
+                                                    @foreach ($data as $key => $value)
+                                                    <input type="hidden" name="dta" value={{$key}}>
+                                                    @endforeach
+                                                    <input type="hidden" name="dta1" value={{$value}}>
                                                     <div class="recom" style="display:none;">
                                                         <button type="submit" class="btn btn-success" id="submitButton">
                                                         NEXT<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>

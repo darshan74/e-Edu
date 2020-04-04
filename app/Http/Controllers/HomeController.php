@@ -41,12 +41,8 @@ class HomeController extends Controller
             ['subject','=','Java'],
         ])->get(); // This will check whether Questions with all categories exist
 
-        $all_levels_exist = DB::table('qa_db')->where([
-            ['level','=','Basic'],
-            ['level','=','Medium'],
-            ['level','=','High'],
-        ])->get(); //This will check whether questions with all level exist
 
+        
         // if all category doesn't exist, get any questions
         if($all_categories_exist->isEmpty()) {
             $any_questions = QAModel::all()->random()->get();
@@ -207,7 +203,6 @@ class HomeController extends Controller
         $score->save();
         return view('recommend')->with('data', $view_array);
         // return view('recommend')->with('data', $first_priority_key);
-        return Controllers('VideoController')->with('data',$view_array);
-        
+
     }
 }
