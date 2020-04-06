@@ -3,19 +3,34 @@
 @section('content')
 <center>
 <h1>Enjoy Learning</h1></center>
-<form ></form>
+<form >
 <div id=class>
 @foreach($data as $data)
-<input type="hidden" value="{{asset($data->url)}}">
-<center><video width="auto" height="auto" controls>
-  <source src="{{asset($data->url)}}" type="video/mp4">
-  Your browser does not support the video tag.
-</video></center>
+<input type="hidden" name="vid" value="{{asset($data->url)}}">
 @endforeach
 <div>
+<p id="hello"></p>
+<input type="button" value="click me" onclick="myFunction()">
+<input type="button" value="Next" onclick="myvideo()">
+<input type="button" value="Next" onclick="myvideo1()">
+</form>
 <center>
+<video src="" id="video" width="auto" height ="auto" controls></video>
 <footer>copy@rights</footer>
 </center>
-</form>
-<script src="{{asset('js/video.js')}}"></script>
+<script>
+  function myFunction() {
+  var x = document.getElementsByName("vid")[0].getAttribute("value"); 
+  document.getElementById("video").src =x;
+}
+function myvideo() {
+  var x = document.getElementsByName("vid")[1].getAttribute("value"); 
+  document.getElementById("video").src =x;
+}
+function myvideo1() {
+  var x = document.getElementsByName("vid")[2].getAttribute("value"); 
+  document.getElementById("video").src =x;
+}
+
+</script>
 @endsection
