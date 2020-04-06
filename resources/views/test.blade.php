@@ -43,10 +43,10 @@
                         <div class="form-group">
                             <i class="fa fa-check-square-o" aria-hidden="true"></i> <label for="option">Select your choice</label>
                             <select class="custom-select custom-select-md mb-3" name="choice{{$loop->iteration}}" required>
-                                <option selected>Select answer</option>
-                                <option value="{{$data->correct_option}}">{{$data->correct_option}}</option>
+                                <option value="" selected>Select answer</option>
                                 <option value="{{$data->other_option1}}">{{$data->other_option1}}</option>
                                 <option value="{{$data->other_option2}}">{{$data->other_option2}}</option>
+                                <option value="{{$data->correct_option}}">{{$data->correct_option}}</option>
                                 <option value="{{$data->other_option3}}">{{$data->other_option3}}</option>
                             </select>
                         </div>

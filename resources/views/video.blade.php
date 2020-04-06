@@ -1,8 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+
 <center>
-<h1>Enjoy Learning</h1></center>
+      <h2><i>Enjoy Learning</i></h2></center>
 <form >
 <div id=class>
 @foreach($data as $data)
@@ -10,7 +11,7 @@
 @endforeach
 <div>
 <p id="hello"></p>
-<input type="button" value="click me" onclick="myFunction()">
+<input type="button" value="ENJOY BABIES" onclick="myFunction()">
 <input type="button" value="Next" onclick="myvideo()">
 <input type="button" value="Next" onclick="myvideo1()">
 </form>
@@ -33,4 +34,7 @@ function myvideo1() {
 }
 
 </script>
+  </div>
+</div>
+
 @endsection
