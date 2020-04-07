@@ -2,38 +2,7 @@
 
 @section('content')
 
-<style>
-  .split {
-    height: 100%;
-    width: 50%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
-  }
-
-  .left {
-    left: 0;
-    background-color: #111;
-  }
-
-  .right {
-    right: 0;
-    background-color: red;
-  }
-
-  .centered img {
-    width: 150px;
-    border-radius: 50%;
-}
-
-footer{
-  text-align: center;
-}
-</style>
-
-<header><h1>Enjoy Learning</h1></header>
+<h1>Enjoy Learning</h1>
 
 
 @foreach($data as $data)
@@ -41,25 +10,21 @@ footer{
 @endforeach
 
 
-<div class="split left">
-  <div class="centered">
-    <form>
-      <nav>
+<section>
+      <nav id="naheed">
         <ul>
-          <li><input type="button" value="Video1" onclick="myFunction()"></li>
-          <li><input type="button" value="Video2" onclick="myvideo()"></li>
-          <li><input type="button" value="Video3" onclick="myvideo1()"></li>
+          <li><input type="button" value="Video1" onclick="myFunction()" class="btn btn-success"><i class="fa fa-play" aria-hidden="true"></i></li></input></br>
+          <li><input type="button" value="Video2" onclick="myvideo()" class="btn btn-success"><i class="fa fa-play" aria-hidden="true"></i></li></br>
+          <li><input type="button" value="Video3" onclick="myvideo1()" class="btn btn-success"><i class="fa fa-play" aria-hidden="true"></i></li></br>
         </ul>
       </nav>
-    </form>
-  </div>
-<div>
 
-<div class="split right">
-  <div class="centered">
-    <video src="" id="video" width="300px" height ="auto" alt="Welcome"  controls></video>
-  </div>
-</div>
+
+  <article>
+      <video src="app/public/poster.jpg" id="video" width="auto" height ="auto" alt="Welcome" controls></video>
+  </article>
+
+</section>
 
 
 

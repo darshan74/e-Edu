@@ -21,6 +21,63 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+<style>
+
+/* Style the header */
+h1 {
+  background-color: thistle;
+  text-align: center;
+  font-size: 35px;
+  color: black;
+  font-style: italic;
+  padding:5;
+}
+
+/* Create two columns/boxes that floats next to each other */
+#naheed {
+  float: left;
+  width: 10%;
+  height: 800px; /* only for demonstration, should be removed */
+  background: thistle;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 90%;
+  background-color: #f1f1f1;
+  height: auto; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: thistle;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+</style>
 </head>
 <body>
     <!-- Preloader style, script and div -->
