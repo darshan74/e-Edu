@@ -11,7 +11,7 @@
 
 
 <section>
-      <nav id="vedio_view">
+      <nav id="video_view">
         <ul>
           <li><input type="button" value="Video1" onclick="myFunction()" class="btn btn-success"><i class="fa fa-play" aria-hidden="true"></i></li></input></br>
           <li><input type="button" value="Video2" onclick="myvideo()" class="btn btn-success"><i class="fa fa-play" aria-hidden="true"></i></li></br>
@@ -19,13 +19,12 @@
         </ul>
       </nav>
 
-
   <article>
-      <video src="app/public/poster.jpg" id="video" width=auto height ="500px" alt="Welcome" controls></video>
+      <video src="app/public/poster.jpg" id="video" width="900px" height ="450px" alt="Welcome" controls></video>
   </article>
 
 </section>
-
+<div id="abc">
 <div id="time"></div>
 <div class="form-group">
 <i class="fa fa-question-circle-o" aria-hidden="true"></i> <label for="question_label">Question</label>
@@ -40,8 +39,7 @@
 <option value="" id="ans4"></option>
 </select>
 </div>
-<div id=hhhahaha></div>
-
+</div>
 
 <footer>copy@rights</footer>
 

@@ -36,24 +36,30 @@ h1 {
 /* Create two columns/boxes that floats next to each other */
 #video_view {
   float: left;
-  width: 10%;
-  height: 700px; /* only for demonstration, should be removed */
-  background: thistle;
+  width: 50%;
+  height: 200px; /* only for demonstration, should be removed */
   padding: 20px;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
+  margin-top: 0px;
+  position: absolute;
 }
 
 article {
   float: right;
-  padding: 20px;
-  width: auto;
+  width: 70%;
   background-color: #f1f1f1;
-  height: 600px; /* only for demonstration, should be removed */
+  height: 450px; /* only for demonstration, should be removed */
+  margin-left: 8%;
+  margin-top: 0px;
+}
+
+#abc {
+    width: 90%;
+    margin-left: 8%;
+}
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 /* Clear floats after the columns */
@@ -66,9 +72,13 @@ section:after {
 /* Style the footer */
 footer {
   background-color: thistle;
+  align-content: flex-end;
   padding: 10px;
   text-align: center;
   color: black;
+  float: bottom;
+  clear: both;
+  margin-bottom:0;
 }
 @media (max-width: 600px) {
   nav, article {
