@@ -40,7 +40,6 @@
 <option value="" id="ans4"></option>
 </select>
 </div>
-<div id ="whichv"></div>
 
 
 <footer>copy@rights</footer>
@@ -50,7 +49,6 @@
 function myFunction() {
     var x = document.getElementsByName("vid")[0].getAttribute("value"); 
     document.getElementById("video").src =x;
-    document.getElementById("whichv").innerHTML=x;
     var video= document.getElementById("video");
       video.play();
       console.log(video.currentTime);
@@ -59,8 +57,9 @@ function myFunction() {
         var unit= "seconds";
         var time=Math.round(video.currentTime)+unit;
         document.getElementById("time").innerHTML=time;
-        if (x == "http://localhost:8000/DSA1.mp4") {
-          if (time == "170seconds") {
+        switch (x) {
+          case "http://localhost:8000/DSA1.mp4":
+            if (time == "170seconds") {
             video.pause();
             document.getElementById("question").value="success";
             document.getElementById("ans1").value="Darshan";
@@ -82,16 +81,669 @@ function myFunction() {
             document.getElementById("ans4").value="Daku";
             document.getElementById("ans4").innerHTML="Daku";
           }
-        }  
-      },1000);
-    }
+          break;
+          case "http://localhost:8000/DSA4.mp4":
+            if (time == "170seconds") {
+            video.pause();
+            document.getElementById("question").value="success";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          } else if (time == "180seconds") {
+            document.getElementById("question").value="success1";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          }
+          break;
+          case "http://localhost:8000/DSA7.mp4":
+            if (time == "170seconds") {
+            video.pause();
+            document.getElementById("question").value="success";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          } else if (time == "180seconds") {
+            document.getElementById("question").value="success1";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          }
+          break;
+          case "http://localhost:8000/JavaTutorial1.mp4":
+            if (time == "170seconds") {
+            video.pause();
+            document.getElementById("question").value="success";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          } else if (time == "180seconds") {
+            document.getElementById("question").value="success1";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          }
+          break;
+          case "http://localhost:8000/JavaTutorial4.mp4":
+            if (time == "170seconds") {
+            video.pause();
+            document.getElementById("question").value="success";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          } else if (time == "180seconds") {
+            document.getElementById("question").value="success1";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          }
+          break;
+          case "http://localhost:8000/JavaTutorial7.mp4":
+            if (time == "170seconds") {
+            video.pause();
+            document.getElementById("question").value="success";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          } else if (time == "180seconds") {
+            document.getElementById("question").value="success1";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          }
+          break;
+          case "http://localhost:8000/ML1.mp4":
+            if (time == "170seconds") {
+            video.pause();
+            document.getElementById("question").value="success";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          } else if (time == "180seconds") {
+            document.getElementById("question").value="success1";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          }
+          break;
+          case "http://localhost:8000/ML4.mp4":
+            if (time == "170seconds") {
+            video.pause();
+            document.getElementById("question").value="success";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          } else if (time == "180seconds") {
+            document.getElementById("question").value="success1";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          }
+          break;
+          case "http://localhost:8000/ML7.mp4":
+            if (time == "170seconds") {
+            video.pause();
+            document.getElementById("question").value="success";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          } else if (time == "180seconds") {
+            document.getElementById("question").value="success1";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          }
+          break;
+          default:
+            break;
+        }
+    },1000);
+  }
   function myvideo() {
     var x = document.getElementsByName("vid")[1].getAttribute("value"); 
     document.getElementById("video").src =x;
+    var video= document.getElementById("video");
+      video.play();
+      console.log(video.currentTime);
+      setInterval(function(){
+        console.log(video.currentTime);
+        var unit= "seconds";
+        var time=Math.round(video.currentTime)+unit;
+        document.getElementById("time").innerHTML=time;
+        switch (x) {
+          case "http://localhost:8000/DSA2.mp4":
+            if (time == "170seconds") {
+            video.pause();
+            document.getElementById("question").value="success";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          } else if (time == "180seconds") {
+            document.getElementById("question").value="success1";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          }
+          break;
+          case "http://localhost:8000/DSA5.mp4":
+            if (time == "170seconds") {
+            video.pause();
+            document.getElementById("question").value="success";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          } else if (time == "180seconds") {
+            document.getElementById("question").value="success1";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          }
+          break;
+          case "http://localhost:8000/DSA8.mp4":
+            if (time == "170seconds") {
+            video.pause();
+            document.getElementById("question").value="success";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          } else if (time == "180seconds") {
+            document.getElementById("question").value="success1";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          }
+          break;
+          case "http://localhost:8000/JavaTutorial2.mp4":
+            if (time == "170seconds") {
+            video.pause();
+            document.getElementById("question").value="success";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          } else if (time == "180seconds") {
+            document.getElementById("question").value="success1";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          }
+          break;
+          case "http://localhost:8000/JavaTutorial5.mp4":
+            if (time == "170seconds") {
+            video.pause();
+            document.getElementById("question").value="success";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          } else if (time == "180seconds") {
+            document.getElementById("question").value="success1";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          }
+          break;
+          case "http://localhost:8000/JavaTutorial8.mp4":
+            if (time == "170seconds") {
+            video.pause();
+            document.getElementById("question").value="success";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          } else if (time == "180seconds") {
+            document.getElementById("question").value="success1";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          }
+          break;
+          case "http://localhost:8000/ML2.mp4":
+            if (time == "170seconds") {
+            video.pause();
+            document.getElementById("question").value="success";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          } else if (time == "180seconds") {
+            document.getElementById("question").value="success1";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          }
+          break;
+          case "http://localhost:8000/ML5.mp4":
+            if (time == "170seconds") {
+            video.pause();
+            document.getElementById("question").value="success";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          } else if (time == "180seconds") {
+            document.getElementById("question").value="success1";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          }
+          break;
+          case "http://localhost:8000/ML8-1.mp4":
+            if (time == "170seconds") {
+            video.pause();
+            document.getElementById("question").value="success";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          } else if (time == "180seconds") {
+            document.getElementById("question").value="success1";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          }
+          break;
+          default:
+            break;
+        }
+    },1000);
   }
   function myvideo1() {
     var x = document.getElementsByName("vid")[2].getAttribute("value"); 
     document.getElementById("video").src =x;
+    var video= document.getElementById("video");
+      video.play();
+      console.log(video.currentTime);
+      setInterval(function(){
+        console.log(video.currentTime);
+        var unit= "seconds";
+        var time=Math.round(video.currentTime)+unit;
+        document.getElementById("time").innerHTML=time;
+        switch (x) {
+          case "http://localhost:8000/DSA3.mp4":
+            if (time == "170seconds") {
+            video.pause();
+            document.getElementById("question").value="success";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          } else if (time == "180seconds") {
+            document.getElementById("question").value="success1";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          }
+          break;
+          case "http://localhost:8000/DSA6.mp4":
+            if (time == "170seconds") {
+            video.pause();
+            document.getElementById("question").value="success";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          } else if (time == "180seconds") {
+            document.getElementById("question").value="success1";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          }
+          break;
+          case "http://localhost:8000/DSA9.mp4":
+            if (time == "170seconds") {
+            video.pause();
+            document.getElementById("question").value="success";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          } else if (time == "180seconds") {
+            document.getElementById("question").value="success1";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          }
+          break;
+          case "http://localhost:8000/JavaTutorial3.mp4":
+            if (time == "170seconds") {
+            video.pause();
+            document.getElementById("question").value="success";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          } else if (time == "180seconds") {
+            document.getElementById("question").value="success1";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          }
+          break;
+          case "http://localhost:8000/JavaTutorial6.mp4":
+            if (time == "170seconds") {
+            video.pause();
+            document.getElementById("question").value="success";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          } else if (time == "180seconds") {
+            document.getElementById("question").value="success1";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          }
+          break;
+          case "http://localhost:8000/JavaTutorial9.mp4":
+            if (time == "170seconds") {
+            video.pause();
+            document.getElementById("question").value="success";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          } else if (time == "180seconds") {
+            document.getElementById("question").value="success1";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          }
+          break;
+          case "http://localhost:8000/ML3.mp4":
+            if (time == "170seconds") {
+            video.pause();
+            document.getElementById("question").value="success";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          } else if (time == "180seconds") {
+            document.getElementById("question").value="success1";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          }
+          break;
+          case "http://localhost:8000/ML6.mp4":
+            if (time == "170seconds") {
+            video.pause();
+            document.getElementById("question").value="success";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          } else if (time == "180seconds") {
+            document.getElementById("question").value="success1";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          }
+          break;
+          case "http://localhost:8000/ML8-2.mp4":
+            if (time == "170seconds") {
+            video.pause();
+            document.getElementById("question").value="success";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          } else if (time == "180seconds") {
+            document.getElementById("question").value="success1";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          }
+          break;
+          default:
+            break;
+        }
+    },1000);
   }
 
 </script>
