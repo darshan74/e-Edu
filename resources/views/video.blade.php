@@ -59,7 +59,7 @@ function myFunction() {
         var unit= "seconds";
         var time=Math.round(video.currentTime)+unit;
         document.getElementById("time").innerHTML=time;
-        if (x == "") {
+        if (x == "http://localhost:8000/DSA1.mp4") {
           if (time == "170seconds") {
             video.pause();
             document.getElementById("question").value="success";
