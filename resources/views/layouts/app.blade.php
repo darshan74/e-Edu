@@ -34,10 +34,10 @@ h1 {
 }
 
 /* Create two columns/boxes that floats next to each other */
-#naheed {
+#video_view {
   float: left;
   width: 10%;
-  height: 800px; /* only for demonstration, should be removed */
+  height: 700px; /* only for demonstration, should be removed */
   background: thistle;
   padding: 20px;
 }
@@ -49,11 +49,11 @@ nav ul {
 }
 
 article {
-  float: left;
+  float: right;
   padding: 20px;
-  width: 90%;
+  width: auto;
   background-color: #f1f1f1;
-  height: auto; /* only for demonstration, should be removed */
+  height: 600px; /* only for demonstration, should be removed */
 }
 
 /* Clear floats after the columns */
