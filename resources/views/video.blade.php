@@ -40,7 +40,7 @@
 <option value="" id="ans4"></option>
 </select>
 </div>
-
+<div id ="whichv"></div>
 
 
 <footer>copy@rights</footer>
@@ -50,6 +50,7 @@
 function myFunction() {
     var x = document.getElementsByName("vid")[0].getAttribute("value"); 
     document.getElementById("video").src =x;
+    document.getElementById("whichv").innerHTML=x;
     var video= document.getElementById("video");
       video.play();
       console.log(video.currentTime);
@@ -58,30 +59,32 @@ function myFunction() {
         var unit= "seconds";
         var time=Math.round(video.currentTime)+unit;
         document.getElementById("time").innerHTML=time;
-        if (time == "170seconds") {
-          video.pause();
-          document.getElementById("question").value="success";
-          document.getElementById("ans1").value="Darshan";
-          document.getElementById("ans1").innerHTML="Darshan";
-          document.getElementById("ans2").value="naheed";
-          document.getElementById("ans2").innerHTML="naheed";
-          document.getElementById("ans3").value="shreya";
-          document.getElementById("ans3").innerHTML="shreya";
-          document.getElementById("ans4").value="Daku";
-          document.getElementById("ans4").innerHTML="Daku";
-        } else if (time == "180seconds") {
-          document.getElementById("question").value="success1";
-          document.getElementById("ans1").value="Darshan";
-          document.getElementById("ans1").innerHTML="Darshan";
-          document.getElementById("ans2").value="naheed";
-          document.getElementById("ans2").innerHTML="naheed";
-          document.getElementById("ans3").value="shreya";
-          document.getElementById("ans3").innerHTML="shreya";
-          document.getElementById("ans4").value="Daku";
-          document.getElementById("ans4").innerHTML="Daku";
-        }
-        },1000);
-  }
+        if (x == "") {
+          if (time == "170seconds") {
+            video.pause();
+            document.getElementById("question").value="success";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          } else if (time == "180seconds") {
+            document.getElementById("question").value="success1";
+            document.getElementById("ans1").value="Darshan";
+            document.getElementById("ans1").innerHTML="Darshan";
+            document.getElementById("ans2").value="naheed";
+            document.getElementById("ans2").innerHTML="naheed";
+            document.getElementById("ans3").value="shreya";
+            document.getElementById("ans3").innerHTML="shreya";
+            document.getElementById("ans4").value="Daku";
+            document.getElementById("ans4").innerHTML="Daku";
+          }
+        }  
+      },1000);
+    }
   function myvideo() {
     var x = document.getElementsByName("vid")[1].getAttribute("value"); 
     document.getElementById("video").src =x;
