@@ -82,27 +82,28 @@ function myFunction() {
           }
           break;
           case "http://localhost:8000/DSA4.mp4":
-            if (time == "170seconds") {
+            if (time == "330seconds") {
             video.pause();
-            document.getElementById("question").value="success";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
-          } else if (time == "180seconds") {
-            document.getElementById("question").value="success1";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
+            document.getElementById("question").value="What is Data Structure?";
+            document.getElementById("ans1").value="a way to operate data";
+            document.getElementById("ans1").innerHTML="a way to operate data";
+            document.getElementById("ans2").value="a way to store data";
+            document.getElementById("ans2").innerHTML="a way to store data";
+            document.getElementById("ans3").value="a way to organize data";
+            document.getElementById("ans3").innerHTML="a way to organize data";
+            document.getElementById("ans4").value="Both b and c";
+            document.getElementById("ans4").innerHTML="Both b and c";
+          } else if (time == "370seconds") {
+            video.pause();
+            document.getElementById("question").value="Representation of data structure is known as ?";
+            document.getElementById("ans1").value="recursive";
+            document.getElementById("ans1").innerHTML="recursive";
+            document.getElementById("ans2").value="abstract data type";
+            document.getElementById("ans2").innerHTML="abstract data type";
+            document.getElementById("ans3").value="storage structure";
+            document.getElementById("ans3").innerHTML="storage structure";
+            document.getElementById("ans4").value="file structure";
+            document.getElementById("ans4").innerHTML="file structure";
           }
           break;
           case "http://localhost:8000/DSA7.mp4":
@@ -202,18 +203,19 @@ function myFunction() {
           }
           break;
           case "http://localhost:8000/ML1.mp4":
-            if (time == "170seconds") {
+            if (time == "90seconds") {
             video.pause();
-            document.getElementById("question").value="success";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
+            document.getElementById("question").value="Machine Learning involves?";
+            document.getElementById("ans1").value="Machine learn things like humans";
+            document.getElementById("ans1").innerHTML="Machine learn things like humans ";
+            document.getElementById("ans2").value="Humans learn things like machine";
+            document.getElementById("ans2").innerHTML="Humans learn things like machine";
+            document.getElementById("ans3").value="Machine thinks like human";
+            document.getElementById("ans3").innerHTML="Machine thinks like human";
+            document.getElementById("ans4").value="Both a and c";
+            document.getElementById("ans4").innerHTML="Both a and c";
           } else if (time == "180seconds") {
+            video.pause();
             document.getElementById("question").value="success1";
             document.getElementById("ans1").value="Darshan";
             document.getElementById("ans1").innerHTML="Darshan";
@@ -293,25 +295,26 @@ function myFunction() {
           case "http://localhost:8000/DSA2.mp4":
             if (time == "170seconds") {
             video.pause();
-            document.getElementById("question").value="success";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
-          } else if (time == "180seconds") {
-            document.getElementById("question").value="success1";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
+            document.getElementById("question").value="How do you implement stack?";
+            document.getElementById("ans1").value="Static";
+            document.getElementById("ans1").innerHTML="Static";
+            document.getElementById("ans2").value="Dynamic";
+            document.getElementById("ans2").innerHTML="Dynamic";
+            document.getElementById("ans3").value="Both A & B";
+            document.getElementById("ans3").innerHTML="Both A & B";
+            document.getElementById("ans4").value="None of these";
+            document.getElementById("ans4").innerHTML="None of these";
+          } else if (time == "370seconds") {
+            video.pause();
+            document.getElementById("question").value="On which rule does the stack data structure work ?";
+            document.getElementById("ans1").value="Last in First Out";
+            document.getElementById("ans1").innerHTML="Last in First Out";
+            document.getElementById("ans2").value="First in First Out";
+            document.getElementById("ans2").innerHTML="First in First Out";
+            document.getElementById("ans3").value="First in Last Out";
+            document.getElementById("ans3").innerHTML="First in Last Out";
+            document.getElementById("ans4").value="Both A & C";
+            document.getElementById("ans4").innerHTML="Both A & C";
           }
           break;
           case "http://localhost:8000/DSA5.mp4":
@@ -435,27 +438,28 @@ function myFunction() {
           }
           break;
           case "http://localhost:8000/ML2.mp4":
-            if (time == "170seconds") {
+            if (time == "420seconds") {
             video.pause();
-            document.getElementById("question").value="success";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
-          } else if (time == "180seconds") {
-            document.getElementById("question").value="success1";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
+            document.getElementById("question").value="Equation for slope ?";
+            document.getElementById("ans1").value="y=mx+b";
+            document.getElementById("ans1").innerHTML="y=mx+b";
+            document.getElementById("ans2").value="b=yx+m";
+            document.getElementById("ans2").innerHTML="b=yx+m";
+            document.getElementById("ans3").value="m=(x/y)+b";
+            document.getElementById("ans3").innerHTML="m=(x/y)+b";
+            document.getElementById("ans4").value="Both a and c";
+            document.getElementById("ans4").innerHTML="Both a and c";
+          } else if (time == "170seconds") {
+            video.pause();
+            document.getElementById("question").value="Syntax to read a .csv file ?";
+            document.getElementById("ans1").value="df = read.csv(“filename.csv”)";
+            document.getElementById("ans1").innerHTML="df = read.csv(“filename.csv”)";
+            document.getElementById("ans2").value="df = pd.read_csv(“filename.csv”)";
+            document.getElementById("ans2").innerHTML="df = pd.read_csv(“filename.csv”)";
+            document.getElementById("ans3").value="df = read_csv(“filename.csv”)";
+            document.getElementById("ans3").innerHTML="df = read_csv(“filename.csv”)";
+            document.getElementById("ans4").value="None";
+            document.getElementById("ans4").innerHTML="None";
           }
           break;
           case "http://localhost:8000/ML5.mp4":

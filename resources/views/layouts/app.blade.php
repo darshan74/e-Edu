@@ -30,7 +30,7 @@ h1 {
   font-size: 35px;
   color: black;
   font-style: italic;
-  padding:5;
+  padding:5px;
 }
 
 /* Create two columns/boxes that floats next to each other */
