@@ -131,51 +131,53 @@ function myFunction() {
           }
           break;
           case "http://localhost:8000/JavaTutorial1.mp4":
-            if (time == "170seconds") {
+            if (time == "210seconds") {
             video.pause();
-            document.getElementById("question").value="success";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
-          } else if (time == "180seconds") {
-            document.getElementById("question").value="success1";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
+            document.getElementById("question").value="Java is _____ orientated language";
+            document.getElementById("ans1").value="Object";
+            document.getElementById("ans1").innerHTML="Object";
+            document.getElementById("ans2").value="Subject ";
+            document.getElementById("ans2").innerHTML="Subject ";
+            document.getElementById("ans3").value="lessons";
+            document.getElementById("ans3").innerHTML="lessons";
+            document.getElementById("ans4").value="entity";
+            document.getElementById("ans4").innerHTML="entity";
+          } else if (time == "780seconds") {
+            video.pause();
+            document.getElementById("question").value="Command to check whether java is installed or not ?";
+            document.getElementById("ans1").value="java.install";
+            document.getElementById("ans1").innerHTML="java.install";
+            document.getElementById("ans2").value="java.getinstall";
+            document.getElementById("ans2").innerHTML="java.getinstall";
+            document.getElementById("ans3").value="java.c";
+            document.getElementById("ans3").innerHTML="java.c";
+            document.getElementById("ans4").value="java.cc";
+            document.getElementById("ans4").innerHTML="java.cc";
           }
           break;
           case "http://localhost:8000/JavaTutorial4.mp4":
-            if (time == "170seconds") {
+            if (time == "565seconds") {
             video.pause();
-            document.getElementById("question").value="success";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
-          } else if (time == "180seconds") {
-            document.getElementById("question").value="success1";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
+            document.getElementById("question").value="Size of int in java is ?";
+            document.getElementById("ans1").value="1 bytes";
+            document.getElementById("ans1").innerHTML="1 bytes";
+            document.getElementById("ans2").value="4 bytes";
+            document.getElementById("ans2").innerHTML="4 bytes";
+            document.getElementById("ans3").value="8 bytes";
+            document.getElementById("ans3").innerHTML="8 bytes";
+            document.getElementById("ans4").value="Depends on execution";
+            document.getElementById("ans4").innerHTML="Depends on execution";
+          } else if (time == "570seconds") {
+            video.pause();
+            document.getElementById("question").value="Total primitive data types in java ?";
+            document.getElementById("ans1").value="6";
+            document.getElementById("ans1").innerHTML="6";
+            document.getElementById("ans2").value="7";
+            document.getElementById("ans2").innerHTML="7";
+            document.getElementById("ans3").value="8";
+            document.getElementById("ans3").innerHTML="8";
+            document.getElementById("ans4").value="9";
+            document.getElementById("ans4").innerHTML="9";
           }
           break;
           case "http://localhost:8000/JavaTutorial7.mp4":
@@ -366,27 +368,17 @@ function myFunction() {
           }
           break;
           case "http://localhost:8000/JavaTutorial2.mp4":
-            if (time == "170seconds") {
+            if (time == "900seconds") {
             video.pause();
-            document.getElementById("question").value="success";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
-          } else if (time == "180seconds") {
-            document.getElementById("question").value="success1";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
+            document.getElementById("question").value="Syntax to print in Java ?";
+            document.getElementById("ans1").value="system.in();";
+            document.getElementById("ans1").innerHTML="system.in();";
+            document.getElementById("ans2").value="system.out.println();";
+            document.getElementById("ans2").innerHTML="system.out.println();";
+            document.getElementById("ans3").value="Print(f);";
+            document.getElementById("ans3").innerHTML="Print(f);";
+            document.getElementById("ans4").value="Print()";
+            document.getElementById("ans4").innerHTML="Print()";
           }
           break;
           case "http://localhost:8000/JavaTutorial5.mp4":
