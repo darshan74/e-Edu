@@ -181,27 +181,27 @@ function myFunction() {
           }
           break;
           case "http://localhost:8000/JavaTutorial7.mp4":
-            if (time == "170seconds") {
+            if (time == "210seconds") {
             video.pause();
-            document.getElementById("question").value="success";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
-          } else if (time == "180seconds") {
-            document.getElementById("question").value="success1";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
+            document.getElementById("question").value="if a = 5;  a++;  and b = 7 ; b--; what will be a+b ?";
+            document.getElementById("ans1").value="5";
+            document.getElementById("ans1").innerHTML="5";
+            document.getElementById("ans2").value="14";
+            document.getElementById("ans2").innerHTML="14";
+            document.getElementById("ans3").value="12";
+            document.getElementById("ans3").innerHTML="12";
+            document.getElementById("ans4").value="11";
+            document.getElementById("ans4").innerHTML="11";
+          } else if (time == "360seconds") {
+            document.getElementById("question").value="if a=10 and a*=5 what will be the output ?";
+            document.getElementById("ans1").value="15";
+            document.getElementById("ans1").innerHTML="15";
+            document.getElementById("ans2").value="14";
+            document.getElementById("ans2").innerHTML="14";
+            document.getElementById("ans3").value="50";
+            document.getElementById("ans3").innerHTML="50";
+            document.getElementById("ans4").value="30";
+            document.getElementById("ans4").innerHTML="30";
           }
           break;
           case "http://localhost:8000/ML1.mp4":
@@ -216,17 +216,17 @@ function myFunction() {
             document.getElementById("ans3").innerHTML="Machine thinks like human";
             document.getElementById("ans4").value="Both a and c";
             document.getElementById("ans4").innerHTML="Both a and c";
-          } else if (time == "180seconds") {
+          } else if (time == "309seconds") {
             video.pause();
-            document.getElementById("question").value="success1";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
+            document.getElementById("question").value="Neural network model consist of three basic layers called as_________";
+            document.getElementById("ans1").value="Input process output";
+            document.getElementById("ans1").innerHTML="Input process output";
+            document.getElementById("ans2").value="Input hidden output";
+            document.getElementById("ans2").innerHTML="Input hidden output";
+            document.getElementById("ans3").value="Data knowledge decision";
+            document.getElementById("ans3").innerHTML="Data knowledge decision";
+            document.getElementById("ans4").value="Fact data knowledge";
+            document.getElementById("ans4").innerHTML="Fact data knowledge";
           }
           break;
           case "http://localhost:8000/ML4.mp4":
@@ -382,51 +382,51 @@ function myFunction() {
           }
           break;
           case "http://localhost:8000/JavaTutorial5.mp4":
-            if (time == "170seconds") {
+            if (time == "84seconds") {
             video.pause();
-            document.getElementById("question").value="success";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
-          } else if (time == "180seconds") {
-            document.getElementById("question").value="success1";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
+            document.getElementById("question").value="By using which class we can get a value from a user?";
+            document.getElementById("ans1").value="Abstract class";
+            document.getElementById("ans1").innerHTML="Abstract class";
+            document.getElementById("ans2").value="Temporary class";
+            document.getElementById("ans2").innerHTML="Temporary class";
+            document.getElementById("ans3").value="Scanner class";
+            document.getElementById("ans3").innerHTML="Scanner class";
+            document.getElementById("ans4").value="Static class";
+            document.getElementById("ans4").innerHTML="Static class";
+          } else if (time == "372seconds") {
+            document.getElementById("question").value="Which Scanner class method is used to read integer value from the user?";
+            document.getElementById("ans1").value="next()";
+            document.getElementById("ans1").innerHTML="next()";
+            document.getElementById("ans2").value="nextInteger()";
+            document.getElementById("ans2").innerHTML="nextInteger()";
+            document.getElementById("ans3").value="nextInt()";
+            document.getElementById("ans3").innerHTML="nextInt()";
+            document.getElementById("ans4").value="readInt()";
+            document.getElementById("ans4").innerHTML="readInt()";
           }
           break;
           case "http://localhost:8000/JavaTutorial8.mp4":
-            if (time == "170seconds") {
+            if (time == "144seconds") {
             video.pause();
-            document.getElementById("question").value="success";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
-          } else if (time == "180seconds") {
-            document.getElementById("question").value="success1";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
+            document.getElementById("question").value="which of the following is a control statement?";
+            document.getElementById("ans1").value="While";
+            document.getElementById("ans1").innerHTML="While";
+            document.getElementById("ans2").value="For";
+            document.getElementById("ans2").innerHTML="For";
+            document.getElementById("ans3").value="do...while";
+            document.getElementById("ans3").innerHTML="do...while";
+            document.getElementById("ans4").value="if";
+            document.getElementById("ans4").innerHTML="if";
+          } else if (time == "360seconds") {
+            document.getElementById("question").value="How many choices are possible when using a single if-else statement?";
+            document.getElementById("ans1").value="1";
+            document.getElementById("ans1").innerHTML="1";
+            document.getElementById("ans2").value="2";
+            document.getElementById("ans2").innerHTML="2";
+            document.getElementById("ans3").value="3";
+            document.getElementById("ans3").innerHTML="3";
+            document.getElementById("ans4").value="4";
+            document.getElementById("ans4").innerHTML="4";
           }
           break;
           case "http://localhost:8000/ML2.mp4":
@@ -592,17 +592,17 @@ function myFunction() {
           }
           break;
           case "http://localhost:8000/JavaTutorial3.mp4":
-            if (time == "170seconds") {
+            if (time == "693seconds") {
             video.pause();
-            document.getElementById("question").value="success";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
+            document.getElementById("question").value="Every Java program should have one main class and one method";
+            document.getElementById("ans1").value="True";
+            document.getElementById("ans1").innerHTML="True";
+            document.getElementById("ans2").value="False";
+            document.getElementById("ans2").innerHTML="False";
+            document.getElementById("ans3").value="Both";
+            document.getElementById("ans3").innerHTML="Both";
+            document.getElementById("ans4").value="None of the above";
+            document.getElementById("ans4").innerHTML="None of the above";
           } else if (time == "180seconds") {
             document.getElementById("question").value="success1";
             document.getElementById("ans1").value="Darshan";
@@ -616,27 +616,27 @@ function myFunction() {
           }
           break;
           case "http://localhost:8000/JavaTutorial6.mp4":
-            if (time == "170seconds") {
+            if (time == "420seconds") {
             video.pause();
-            document.getElementById("question").value="success";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
-          } else if (time == "180seconds") {
-            document.getElementById("question").value="success1";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
+            document.getElementById("question").value=" Modulus operator, %, can be applied to which of these?";
+            document.getElementById("ans1").value="Integers";
+            document.getElementById("ans1").innerHTML="Integers";
+            document.getElementById("ans2").value="Floating – point numbers";
+            document.getElementById("ans2").innerHTML="Floating – point numbers";
+            document.getElementById("ans3").value="Both Integers and floating – point numbers";
+            document.getElementById("ans3").innerHTML="Both Integers and floating – point numbers";
+            document.getElementById("ans4").value="None of the mentioned";
+            document.getElementById("ans4").innerHTML="None of the mentioned";
+          } else if (time == "504seconds") {
+            document.getElementById("question").value="Which of the following can be operands of arithmetic operators?";
+            document.getElementById("ans1").value="Numeric";
+            document.getElementById("ans1").innerHTML="Numeric";
+            document.getElementById("ans2").value="Boolean";
+            document.getElementById("ans2").innerHTML="Boolean";
+            document.getElementById("ans3").value="Characters";
+            document.getElementById("ans3").innerHTML="Characters";
+            document.getElementById("ans4").value="Both Numeric & Characters";
+            document.getElementById("ans4").innerHTML="Both Numeric & Characters";
           }
           break;
           case "http://localhost:8000/JavaTutorial9.mp4":
