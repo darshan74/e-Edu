@@ -58,27 +58,27 @@ function myFunction() {
         document.getElementById("time").innerHTML=time;
         switch (x) {
           case "http://localhost:8000/DSA1.mp4":
-            if (time == "170seconds") {
+            if (time == "420seconds") {
             video.pause();
-            document.getElementById("question").value="success";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
-          } else if (time == "180seconds") {
-            document.getElementById("question").value="success1";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
+            document.getElementById("question").value="Choose the valid format for declaration of 1D array.";
+            document.getElementById("ans1").value="int a[];";
+            document.getElementById("ans1").innerHTML="int a[];";
+            document.getElementById("ans2").value="int n, a[n];";
+            document.getElementById("ans2").innerHTML="int n, a[n];";
+            document.getElementById("ans3").value="int a[60];";
+            document.getElementById("ans3").innerHTML="int a[60];";
+            document.getElementById("ans4").value="int a;";
+            document.getElementById("ans4").innerHTML="int a;";
+          } else if (time == "1332seconds") {
+            document.getElementById("question").value="Which of the following is true about Array?";
+            document.getElementById("ans1").value="Array is a fixed size sequenced collection of data items of same data type";
+            document.getElementById("ans1").innerHTML="Array is a fixed size sequenced collection of data items of same data type";
+            document.getElementById("ans2").value="Array is a linear data structure where element is added from one end and removed from another end";
+            document.getElementById("ans2").innerHTML="Array is a linear data structure where element is added from one end and removed from another end";
+            document.getElementById("ans3").value="Array can store elements of different data types";
+            document.getElementById("ans3").innerHTML="Array can store elements of different data types";
+            document.getElementById("ans4").value="Array is a non-linear data structure";
+            document.getElementById("ans4").innerHTML="Array is a non-linear data structure";
           }
           break;
           case "http://localhost:8000/DSA4.mp4":
@@ -107,27 +107,27 @@ function myFunction() {
           }
           break;
           case "http://localhost:8000/DSA7.mp4":
-            if (time == "170seconds") {
+            if (time == "549seconds") {
             video.pause();
-            document.getElementById("question").value="success";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
-          } else if (time == "180seconds") {
-            document.getElementById("question").value="success1";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
+            document.getElementById("question").value="When the list as ADT is full, we create a new larger array , ____________ the size of the previous one.";
+            document.getElementById("ans1").value="Triple";
+            document.getElementById("ans1").innerHTML="Triple";
+            document.getElementById("ans2").value="Double";
+            document.getElementById("ans2").innerHTML="Double";
+            document.getElementById("ans3").value="Same";
+            document.getElementById("ans3").innerHTML="Same";
+            document.getElementById("ans4").value="Quadruple";
+            document.getElementById("ans4").innerHTML="Quadruple";
+          } else if (time == "747seconds") {
+            document.getElementById("question").value="Time Complexity required to access element at any index in a list is ___________";
+            document.getElementById("ans1").value="O(n)";
+            document.getElementById("ans1").innerHTML="O(n)";
+            document.getElementById("ans2").value="O(logn)";
+            document.getElementById("ans2").innerHTML="O(logn)";
+            document.getElementById("ans3").value="O(1)";
+            document.getElementById("ans3").innerHTML="O(1)";
+            document.getElementById("ans4").value="O(n2)";
+            document.getElementById("ans4").innerHTML="O(n2)";
           }
           break;
           case "http://localhost:8000/JavaTutorial1.mp4":
@@ -664,27 +664,27 @@ function myFunction() {
           }
           break;
           case "http://localhost:8000/ML3.mp4":
-            if (time == "170seconds") {
+            if (time == "120seconds") {
             video.pause();
-            document.getElementById("question").value="success";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
-          } else if (time == "180seconds") {
-            document.getElementById("question").value="success1";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
+            document.getElementById("question").value="Linear Regression with multiple variables is also called as __________ ";
+            document.getElementById("ans1").value="Multiple regression";
+            document.getElementById("ans1").innerHTML="Multiple regression";
+            document.getElementById("ans2").value="Multi variables";
+            document.getElementById("ans2").innerHTML="Multi variables";
+            document.getElementById("ans3").value="Multivariate Regression";
+            document.getElementById("ans3").innerHTML="Multivariate Regression";
+            document.getElementById("ans4").value="Multi integral";
+            document.getElementById("ans4").innerHTML="Multi integral";
+          } else if (time == "753seconds") {
+            document.getElementById("question").value="Which module is used to convert word to number?";
+            document.getElementById("ans1").value="String to num";
+            document.getElementById("ans1").innerHTML="String to num";
+            document.getElementById("ans2").value="word2number";
+            document.getElementById("ans2").innerHTML="word2number";
+            document.getElementById("ans3").value="String2number";
+            document.getElementById("ans3").innerHTML="String2number";
+            document.getElementById("ans4").value="Word to num";
+            document.getElementById("ans4").innerHTML="Word to num";
           }
           break;
           case "http://localhost:8000/ML6.mp4":
