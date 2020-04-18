@@ -70,6 +70,7 @@ function myFunction() {
             document.getElementById("ans4").value="int a;";
             document.getElementById("ans4").innerHTML="int a;";
           } else if (time == "1332seconds") {
+            video.pause();
             document.getElementById("question").value="Which of the following is true about Array?";
             document.getElementById("ans1").value="Array is a fixed size sequenced collection of data items of same data type";
             document.getElementById("ans1").innerHTML="Array is a fixed size sequenced collection of data items of same data type";
@@ -119,6 +120,7 @@ function myFunction() {
             document.getElementById("ans4").value="Quadruple";
             document.getElementById("ans4").innerHTML="Quadruple";
           } else if (time == "747seconds") {
+            video.pause();
             document.getElementById("question").value="Time Complexity required to access element at any index in a list is ___________";
             document.getElementById("ans1").value="O(n)";
             document.getElementById("ans1").innerHTML="O(n)";
@@ -193,6 +195,7 @@ function myFunction() {
             document.getElementById("ans4").value="11";
             document.getElementById("ans4").innerHTML="11";
           } else if (time == "360seconds") {
+            video.pause();
             document.getElementById("question").value="if a=10 and a*=5 what will be the output ?";
             document.getElementById("ans1").value="15";
             document.getElementById("ans1").innerHTML="15";
@@ -230,51 +233,53 @@ function myFunction() {
           }
           break;
           case "http://localhost:8000/ML4.mp4":
-            if (time == "170seconds") {
+            if (time == "258seconds") {
             video.pause();
-            document.getElementById("question").value="success";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
-          } else if (time == "180seconds") {
-            document.getElementById("question").value="success1";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
+            document.getElementById("question").value="Another name for mean square error is?";
+            document.getElementById("ans1").value="Cost function";
+            document.getElementById("ans1").innerHTML="Cost function";
+            document.getElementById("ans2").value="Price function";
+            document.getElementById("ans2").innerHTML="Price function";
+            document.getElementById("ans3").value="Binary function";
+            document.getElementById("ans3").innerHTML="Binary function";
+            document.getElementById("ans4").value="Static function";
+            document.getElementById("ans4").innerHTML="Static function";
+          } else if (time == "1692seconds") {
+            video.pause();
+            document.getElementById("question").value="Computational complexity of Gradient descent is?";
+            document.getElementById("ans1").value="linear in D";
+            document.getElementById("ans1").innerHTML="linear in D";
+            document.getElementById("ans2").value="linear in N";
+            document.getElementById("ans2").innerHTML="linear in N";
+            document.getElementById("ans3").value="polynomial in D";
+            document.getElementById("ans3").innerHTML="polynomial in D";
+            document.getElementById("ans4").value="dependent on the number of iterations";
+            document.getElementById("ans4").innerHTML="dependent on the number of iterations";
           }
           break;
           case "http://localhost:8000/ML7.mp4":
-            if (time == "170seconds") {
+            if (time == "78seconds") {
             video.pause();
-            document.getElementById("question").value="success";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
-          } else if (time == "180seconds") {
-            document.getElementById("question").value="success1";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
+            document.getElementById("question").value="The dataset used in ML are generally divided as";
+            document.getElementById("ans1").value="Training, Treating";
+            document.getElementById("ans1").innerHTML="Training, Treating";
+            document.getElementById("ans2").value="Treating, Testing";
+            document.getElementById("ans2").innerHTML="Treating, Testing";
+            document.getElementById("ans3").value="Training, Testing";
+            document.getElementById("ans3").innerHTML="Training, Testing";
+            document.getElementById("ans4").value="Both a and b";
+            document.getElementById("ans4").innerHTML="Both a and b";
+          } else if (time == "372seconds") {
+            video.pause();
+            document.getElementById("question").value="Which method is used to check the accuracy of the model";
+            document.getElementById("ans1").value="Skip";
+            document.getElementById("ans1").innerHTML="Skip";
+            document.getElementById("ans2").value="Train";
+            document.getElementById("ans2").innerHTML="Train";
+            document.getElementById("ans3").value="Score";
+            document.getElementById("ans3").innerHTML="Score";
+            document.getElementById("ans4").value="fit";
+            document.getElementById("ans4").innerHTML="fit";
           }
           break;
           default:
@@ -320,51 +325,53 @@ function myFunction() {
           }
           break;
           case "http://localhost:8000/DSA5.mp4":
-            if (time == "170seconds") {
+            if (time == "558seconds") {
             video.pause();
-            document.getElementById("question").value="success";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
-          } else if (time == "180seconds") {
-            document.getElementById("question").value="success1";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
+            document.getElementById("question").value="Which data structure doesn’t store elements at adjacent memory locations?";
+            document.getElementById("ans1").value="Array";
+            document.getElementById("ans1").innerHTML="Array";
+            document.getElementById("ans2").value="Stack";
+            document.getElementById("ans2").innerHTML="Stack";
+            document.getElementById("ans3").value="Linked list";
+            document.getElementById("ans3").innerHTML="Linked list";
+            document.getElementById("ans4").value="Queue";
+            document.getElementById("ans4").innerHTML="Queue";
+          } else if (time == "1020seconds") {
+            video.pause();
+            document.getElementById("question").value="The nodes in the linked list consist of __________ and ___________.";
+            document.getElementById("ans1").value="Head, Tail";
+            document.getElementById("ans1").innerHTML="Head, Tail";
+            document.getElementById("ans2").value="First element, Last element";
+            document.getElementById("ans2").innerHTML="First element, Last element";
+            document.getElementById("ans3").value="Data, Address of next node";
+            document.getElementById("ans3").innerHTML="Data, Address of next node";
+            document.getElementById("ans4").value="Pointer, Address";
+            document.getElementById("ans4").innerHTML="Pointer, Address";
           }
           break;
           case "http://localhost:8000/DSA8.mp4":
-            if (time == "170seconds") {
+            if (time == "255seconds") {
             video.pause();
-            document.getElementById("question").value="success";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
-          } else if (time == "180seconds") {
-            document.getElementById("question").value="success1";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
+            document.getElementById("question").value="What is used to implement Linked lists in C or C++?";
+            document.getElementById("ans1").value="Link";
+            document.getElementById("ans1").innerHTML="Link";
+            document.getElementById("ans2").value="Structure";
+            document.getElementById("ans2").innerHTML="Structure";
+            document.getElementById("ans3").value="Head";
+            document.getElementById("ans3").innerHTML="Head";
+            document.getElementById("ans4").value="Node";
+            document.getElementById("ans4").innerHTML="Node";
+          } else if (time == "810seconds") {
+            video.pause();
+            document.getElementById("question").value="Which function is used to dynamically allocate memory to the node in C?";
+            document.getElementById("ans1").value="Dealloc";
+            document.getElementById("ans1").innerHTML="Dealloc";
+            document.getElementById("ans2").value="Calloc";
+            document.getElementById("ans2").innerHTML="Calloc";
+            document.getElementById("ans3").value="Malloc";
+            document.getElementById("ans3").innerHTML="Malloc";
+            document.getElementById("ans4").value="Realloc";
+            document.getElementById("ans4").innerHTML="Realloc";
           }
           break;
           case "http://localhost:8000/JavaTutorial2.mp4":
@@ -394,6 +401,7 @@ function myFunction() {
             document.getElementById("ans4").value="Static class";
             document.getElementById("ans4").innerHTML="Static class";
           } else if (time == "372seconds") {
+            video.pause();
             document.getElementById("question").value="Which Scanner class method is used to read integer value from the user?";
             document.getElementById("ans1").value="next()";
             document.getElementById("ans1").innerHTML="next()";
@@ -418,6 +426,7 @@ function myFunction() {
             document.getElementById("ans4").value="if";
             document.getElementById("ans4").innerHTML="if";
           } else if (time == "360seconds") {
+            video.pause();
             document.getElementById("question").value="How many choices are possible when using a single if-else statement?";
             document.getElementById("ans1").value="1";
             document.getElementById("ans1").innerHTML="1";
@@ -455,27 +464,28 @@ function myFunction() {
           }
           break;
           case "http://localhost:8000/ML5.mp4":
-            if (time == "170seconds") {
+            if (time == "138seconds") {
             video.pause();
-            document.getElementById("question").value="success";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
-          } else if (time == "180seconds") {
-            document.getElementById("question").value="success1";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
+            document.getElementById("question").value="The process of pickling in Python includes:";
+            document.getElementById("ans1").value="conversion of a list into a datatable";
+            document.getElementById("ans1").innerHTML="conversion of a list into a datatable";
+            document.getElementById("ans2").value="conversion of a byte stream into Python object hierarchy";
+            document.getElementById("ans2").innerHTML="conversion of a byte stream into Python object hierarchy";
+            document.getElementById("ans3").value="conversion of a Python object hierarchy into byte stream";
+            document.getElementById("ans3").innerHTML="conversion of a Python object hierarchy into byte stream";
+            document.getElementById("ans4").value="conversion of a datatable into a list";
+            document.getElementById("ans4").innerHTML="conversion of a datatable into a list";
+          } else if (time == "300seconds") {
+            video.pause();
+            document.getElementById("question").value="Which of the following functions can accept more than one positional argument?";
+            document.getElementById("ans1").value="pickle.dumps";
+            document.getElementById("ans1").innerHTML="pickle.dumps";
+            document.getElementById("ans2").value="pickle.loads";
+            document.getElementById("ans2").innerHTML="pickle.loads";
+            document.getElementById("ans3").value="pickle.dump";
+            document.getElementById("ans3").innerHTML="pickle.dump";
+            document.getElementById("ans4").value="pickle.load";
+            document.getElementById("ans4").innerHTML="pickle.load";
           }
           break;
           case "http://localhost:8000/ML8-1.mp4":
@@ -491,6 +501,7 @@ function myFunction() {
             document.getElementById("ans4").value="Daku";
             document.getElementById("ans4").innerHTML="Daku";
           } else if (time == "180seconds") {
+            video.pause();
             document.getElementById("question").value="success1";
             document.getElementById("ans1").value="Darshan";
             document.getElementById("ans1").innerHTML="Darshan";
@@ -520,75 +531,78 @@ function myFunction() {
         document.getElementById("time").innerHTML=time;
         switch (x) {
           case "http://localhost:8000/DSA3.mp4":
-            if (time == "170seconds") {
+            if (time == "258seconds") {
             video.pause();
-            document.getElementById("question").value="success";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
-          } else if (time == "180seconds") {
-            document.getElementById("question").value="success1";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
+            document.getElementById("question").value="Insertion and Deletion operation in Queue is known as ?";
+            document.getElementById("ans1").value="Push and Pop";
+            document.getElementById("ans1").innerHTML="Push and Pop";
+            document.getElementById("ans2").value="Enqueue and Dequeue";
+            document.getElementById("ans2").innerHTML="Enqueue and Dequeue";
+            document.getElementById("ans3").value="Insert and Delete";
+            document.getElementById("ans3").innerHTML="Insert and Delete";
+            document.getElementById("ans4").value="None of the Above";
+            document.getElementById("ans4").innerHTML="None of the Above";
+          } else if (time == "1140seconds") {
+            video.pause();
+            document.getElementById("question").value="If the elements “A”, “B”, “C” and “D” are placed in a queue and are deleted one at a time, in what order will they be removed?";
+            document.getElementById("ans1").value="ABCD";
+            document.getElementById("ans1").innerHTML="ABCD";
+            document.getElementById("ans2").value="DCBA";
+            document.getElementById("ans2").innerHTML="DCBA";
+            document.getElementById("ans3").value="DCAB";
+            document.getElementById("ans3").innerHTML="DCAB";
+            document.getElementById("ans4").value="ABDC";
+            document.getElementById("ans4").innerHTML="ABDC";
           }
           break;
           case "http://localhost:8000/DSA6.mp4":
-            if (time == "170seconds") {
+            if (time == "498seconds") {
             video.pause();
-            document.getElementById("question").value="success";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
-          } else if (time == "180seconds") {
-            document.getElementById("question").value="success1";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
+            document.getElementById("question").value="Average cost of accessing element in a linked list is ___________";
+            document.getElementById("ans1").value="O(1)";
+            document.getElementById("ans1").innerHTML="O(1)";
+            document.getElementById("ans2").value="O(n2)";
+            document.getElementById("ans2").innerHTML="O(n2)";
+            document.getElementById("ans3").value="O(n)";
+            document.getElementById("ans3").innerHTML="O(n)";
+            document.getElementById("ans4").value="O(logn)";
+            document.getElementById("ans4").innerHTML="O(logn)";
+          } else if (time == "726seconds") {
+            video.pause();
+            document.getElementById("question").value="Which data structure requires extra memory for pointer variable?";
+            document.getElementById("ans1").value="Queue";
+            document.getElementById("ans1").innerHTML="Queue";
+            document.getElementById("ans2").value="Linked list";
+            document.getElementById("ans2").innerHTML="Linked list";
+            document.getElementById("ans3").value="Stack";
+            document.getElementById("ans3").innerHTML="Stack";
+            document.getElementById("ans4").value="Array";
+            document.getElementById("ans4").innerHTML="Array";
           }
           break;
           case "http://localhost:8000/DSA9.mp4":
-            if (time == "170seconds") {
+            if (time == "180seconds") {
             video.pause();
-            document.getElementById("question").value="success";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
-          } else if (time == "180seconds") {
-            document.getElementById("question").value="success1";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
+            document.getElementById("question").value="What is the general term used for the first node of a linked list?";
+            document.getElementById("ans1").value="First node";
+            document.getElementById("ans1").innerHTML="First node";
+            document.getElementById("ans2").value="Head";
+            document.getElementById("ans2").innerHTML="Head";
+            document.getElementById("ans3").value="Tail";
+            document.getElementById("ans3").innerHTML="Tail";
+            document.getElementById("ans4").value="Pointer";
+            document.getElementById("ans4").innerHTML="Pointer";
+          } else if (time == "660seconds") {
+            video.pause();
+            document.getElementById("question").value="Which Keyword is used instead of malloc to dynamically allocate memory in C++? ";
+            document.getElementById("ans1").value="Allocate";
+            document.getElementById("ans1").innerHTML="Allocate";
+            document.getElementById("ans2").value="Key";
+            document.getElementById("ans2").innerHTML="Key";
+            document.getElementById("ans3").value="New";
+            document.getElementById("ans3").innerHTML="New";
+            document.getElementById("ans4").value="Alloc";
+            document.getElementById("ans4").innerHTML="Alloc";
           }
           break;
           case "http://localhost:8000/JavaTutorial3.mp4":
@@ -603,16 +617,17 @@ function myFunction() {
             document.getElementById("ans3").innerHTML="Both";
             document.getElementById("ans4").value="None of the above";
             document.getElementById("ans4").innerHTML="None of the above";
-          } else if (time == "180seconds") {
-            document.getElementById("question").value="success1";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
+          } else if (time == "1038seconds") {
+            video.pause();
+            document.getElementById("question").value="Two ways of writing comments in java are ____________ and ____________";
+            document.getElementById("ans1").value="<!--    >, /*    */";
+            document.getElementById("ans1").innerHTML="<!--   >, /*    */";
+            document.getElementById("ans2").value="//, /*      */";
+            document.getElementById("ans2").innerHTML="//, /*      */";
+            document.getElementById("ans3").value="**, <>";
+            document.getElementById("ans3").innerHTML="**, <>";
+            document.getElementById("ans4").value="//, **";
+            document.getElementById("ans4").innerHTML="//, **";
           }
           break;
           case "http://localhost:8000/JavaTutorial6.mp4":
@@ -628,6 +643,7 @@ function myFunction() {
             document.getElementById("ans4").value="None of the mentioned";
             document.getElementById("ans4").innerHTML="None of the mentioned";
           } else if (time == "504seconds") {
+            video.pause();
             document.getElementById("question").value="Which of the following can be operands of arithmetic operators?";
             document.getElementById("ans1").value="Numeric";
             document.getElementById("ans1").innerHTML="Numeric";
@@ -652,6 +668,7 @@ function myFunction() {
             document.getElementById("ans4").value="Daku";
             document.getElementById("ans4").innerHTML="Daku";
           } else if (time == "180seconds") {
+            video.pause();
             document.getElementById("question").value="success1";
             document.getElementById("ans1").value="Darshan";
             document.getElementById("ans1").innerHTML="Darshan";
@@ -676,6 +693,7 @@ function myFunction() {
             document.getElementById("ans4").value="Multi integral";
             document.getElementById("ans4").innerHTML="Multi integral";
           } else if (time == "753seconds") {
+            video.pause();
             document.getElementById("question").value="Which module is used to convert word to number?";
             document.getElementById("ans1").value="String to num";
             document.getElementById("ans1").innerHTML="String to num";
@@ -688,18 +706,19 @@ function myFunction() {
           }
           break;
           case "http://localhost:8000/ML6.mp4":
-            if (time == "170seconds") {
+            if (time == "378seconds") {
             video.pause();
-            document.getElementById("question").value="success";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
+            document.getElementById("question").value="You want to apply one hot encoding (OHE) on the categorical feature(s). What challenges may you face if you have applied OHE on a categorical variable of training dataset?";
+            document.getElementById("ans1").value="All categories of categorical variable are not present in the test dataset.";
+            document.getElementById("ans1").innerHTML="All categories of categorical variable are not present in the test dataset.";
+            document.getElementById("ans2").value="Frequency distribution of categories is different in train as compared to the test dataset.";
+            document.getElementById("ans2").innerHTML="Frequency distribution of categories is different in train as compared to the test dataset.";
+            document.getElementById("ans3").value="Train and Test always have same distribution.";
+            document.getElementById("ans3").innerHTML="Train and Test always have same distribution.";
+            document.getElementById("ans4").value="Both A and B";
+            document.getElementById("ans4").innerHTML="Both A and B";
           } else if (time == "180seconds") {
+            video.pause();
             document.getElementById("question").value="success1";
             document.getElementById("ans1").value="Darshan";
             document.getElementById("ans1").innerHTML="Darshan";
@@ -724,6 +743,7 @@ function myFunction() {
             document.getElementById("ans4").value="Daku";
             document.getElementById("ans4").innerHTML="Daku";
           } else if (time == "180seconds") {
+            video.pause();
             document.getElementById("question").value="success1";
             document.getElementById("ans1").value="Darshan";
             document.getElementById("ans1").innerHTML="Darshan";
