@@ -489,28 +489,28 @@ function myFunction() {
           }
           break;
           case "http://localhost:8000/ML8-1.mp4":
-            if (time == "170seconds") {
+            if (time == "120seconds") {
             video.pause();
-            document.getElementById("question").value="success";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
-          } else if (time == "180seconds") {
+            document.getElementById("question").value="When there are more than two categories, which classification is it ?";
+            document.getElementById("ans1").value="Binary Classification";
+            document.getElementById("ans1").innerHTML="Binary Classification";
+            document.getElementById("ans2").value="Multiclass classification";
+            document.getElementById("ans2").innerHTML="Multiclass classification";
+            document.getElementById("ans3").value="Both";
+            document.getElementById("ans3").innerHTML="Both";
+            document.getElementById("ans4").value="None of the Above";
+            document.getElementById("ans4").innerHTML="None of the Above";
+          } else if (time == "430seconds") {
             video.pause();
-            document.getElementById("question").value="success1";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
+            document.getElementById("question").value="What does sigmoid function do to input data ?";
+            document.getElementById("ans1").value="Converts the input range from 0 to 1";
+            document.getElementById("ans1").innerHTML="Converts the input range from 0 to 1";
+            document.getElementById("ans2").value="Converts the input range from 1 to 3";
+            document.getElementById("ans2").innerHTML="Converts the input range from 1 to 3";
+            document.getElementById("ans3").value="Converts the input range from -1 to 1";
+            document.getElementById("ans3").innerHTML="Converts the input range from -1 to 1";
+            document.getElementById("ans4").value="None of the above";
+            document.getElementById("ans4").innerHTML="None of the above";
           }
           break;
           default:
@@ -620,8 +620,8 @@ function myFunction() {
           } else if (time == "1038seconds") {
             video.pause();
             document.getElementById("question").value="Two ways of writing comments in java are ____________ and ____________";
-            document.getElementById("ans1").value="<!--    >, /*    */";
-            document.getElementById("ans1").innerHTML="<!--   >, /*    */";
+            document.getElementById("ans1").value=" <!-- >, /*   */" ;
+            document.getElementById("ans1").innerHTML=" <!-- >, /*   */" ;
             document.getElementById("ans2").value="//, /*      */";
             document.getElementById("ans2").innerHTML="//, /*      */";
             document.getElementById("ans3").value="**, <>";
@@ -731,28 +731,28 @@ function myFunction() {
           }
           break;
           case "http://localhost:8000/ML8-2.mp4":
-            if (time == "170seconds") {
+            if (time == "200seconds") {
             video.pause();
-            document.getElementById("question").value="success";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
-          } else if (time == "180seconds") {
+            document.getElementById("question").value="Which method helps to give a corresponding image from an array of digits ?";
+            document.getElementById("ans1").value="plt.matshow()";
+            document.getElementById("ans1").innerHTML="plt.matshow()";
+            document.getElementById("ans2").value="plt.mathshow()";
+            document.getElementById("ans2").innerHTML="plt.mathshow()";
+            document.getElementById("ans3").value="plt.show()";
+            document.getElementById("ans3").innerHTML="plt.show()";
+            document.getElementById("ans4").value="None of the above";
+            document.getElementById("ans4").innerHTML="None of the above";
+          } else if (time == "400seconds") {
             video.pause();
-            document.getElementById("question").value="success1";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
+            document.getElementById("question").value="Why should one divide the dataset into test and train data ?";
+            document.getElementById("ans1").value="Because our data should not be overfit.";
+            document.getElementById("ans1").innerHTML="Because our data should not be overfit.";
+            document.getElementById("ans2").value="Because it reduces time complexity.";
+            document.getElementById("ans2").innerHTML="Because it reduces time complexity.";
+            document.getElementById("ans3").value="Because data that is trained against from be different from which it is tested.";
+            document.getElementById("ans3").innerHTML="Because data that is trained against from be different from which it is tested.";
+            document.getElementById("ans4").value="Both A and C.";
+            document.getElementById("ans4").innerHTML="Both A and C.";
           }
           break;
           default:
