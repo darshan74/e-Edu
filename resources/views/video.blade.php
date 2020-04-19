@@ -24,6 +24,9 @@
   </article>
 
 </section>
+
+
+
 <div id="abc">
 <div id="time"></div>
 <div class="form-group">
@@ -39,9 +42,11 @@
 <option value="" id="ans4"></option>
 </select>
 </div>
+<input type="button" value="submit" class="btn btn-success" onclick="submit()">
 </div>
 
-<footer>copy@rights</footer>
+
+<div id="sun"></div>
 
 
 <script >
@@ -760,6 +765,25 @@ function myFunction() {
         }
     },1000);
   }
-
+  function submit(){
+    var ques = document.getElementById("question").value;
+    var ans1 = document.getElementById("ans1").value;
+    var ans2 = document.getElementById("ans2").value;
+    var ans3 = document.getElementById("ans3").value;
+    var ans4 = document.getElementById("ans4").value;
+    var video = document.getElementById("video");
+    switch (ques) {
+      case "Choose the valid format for declaration of 1D array.":
+        if (ans1 != "int a[60];" && ans2 != "int a[60];" && ans4 != "int a[60];") {
+          video.currentTime = 0;
+          video.play();
+        }else {
+          video.play();
+        }
+        break;
+      default:
+        break;
+    }
+  }
 </script>
 @endsection
