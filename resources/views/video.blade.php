@@ -34,7 +34,7 @@
 <input type="text" class="form-control" id="question" name="questionans" value="" readonly></div>
 <div class="form-group">
 <i class="fa fa-check-square-o" aria-hidden="true"></i> <label for="option">Select your choice</label>
-<select class="custom-select custom-select-md mb-3" name="choice" required>
+<select class="custom-select custom-select-md mb-3" id="select1" name="choice" required>
 <option value="" selected>Select answer</option>
 <option value="" id="ans1"></option>
 <option value="" id="ans2"></option>
@@ -46,7 +46,7 @@
 </div>
 
 
-<div id="sun"></div>
+<span class="output"></span> 
 
 
 <script >
@@ -767,20 +767,27 @@ function myFunction() {
   }
   function submit(){
     var ques = document.getElementById("question").value;
-    var ans1 = document.getElementById("ans1").value;
-    var ans2 = document.getElementById("ans2").value;
-    var ans3 = document.getElementById("ans3").value;
-    var ans4 = document.getElementById("ans4").value;
+    selectElement = document.querySelector('#select1'); 
+    output =selectElement.options[selectElement.selectedIndex].value; 
+    document.querySelector('.output').textContent = output;
     var video = document.getElementById("video");
     switch (ques) {
       case "Choose the valid format for declaration of 1D array.":
-        if (ans1 != "int a[60];" && ans2 != "int a[60];" && ans4 != "int a[60];") {
-          video.currentTime = 0;
+          if(output == "int a[60];") {
           video.play();
-        }else {
+          } else {
+            video.currentTime = 0 ;
+            video.play();
+          }
+          break;
+      case "Which of the following is true about Array?":
+          if(output == "Array is a fixed size sequenced collection of data items of same data type") {
           video.play();
-        }
-        break;
+          } else {
+            video.currentTime = 421 ; // 1 sec jada rakha hai because vo pause hai 420 pe 
+            video.play();
+          }
+          break;
       default:
         break;
     }
