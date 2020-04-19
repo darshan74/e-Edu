@@ -444,7 +444,7 @@ function myFunction() {
           }
           break;
           case "http://localhost:8000/ML2.mp4":
-            if (time == "420seconds") {
+            if (time == "170seconds") {
             video.pause();
             document.getElementById("question").value="Equation for slope ?";
             document.getElementById("ans1").value="y=mx+b";
@@ -455,7 +455,7 @@ function myFunction() {
             document.getElementById("ans3").innerHTML="m=(x/y)+b";
             document.getElementById("ans4").value="Both a and c";
             document.getElementById("ans4").innerHTML="Both a and c";
-          } else if (time == "170seconds") {
+          } else if (time == "393seconds") {
             video.pause();
             document.getElementById("question").value="Syntax to read a .csv file ?";
             document.getElementById("ans1").value="df = read.csv(“filename.csv”)";
@@ -466,7 +466,7 @@ function myFunction() {
             document.getElementById("ans3").innerHTML="df = read_csv(“filename.csv”)";
             document.getElementById("ans4").value="None";
             document.getElementById("ans4").innerHTML="None";
-          }
+          }  
           break;
           case "http://localhost:8000/ML5.mp4":
             if (time == "138seconds") {
@@ -722,17 +722,6 @@ function myFunction() {
             document.getElementById("ans3").innerHTML="Train and Test always have same distribution.";
             document.getElementById("ans4").value="Both A and B";
             document.getElementById("ans4").innerHTML="Both A and B";
-          } else if (time == "180seconds") {
-            video.pause();
-            document.getElementById("question").value="success1";
-            document.getElementById("ans1").value="Darshan";
-            document.getElementById("ans1").innerHTML="Darshan";
-            document.getElementById("ans2").value="naheed";
-            document.getElementById("ans2").innerHTML="naheed";
-            document.getElementById("ans3").value="shreya";
-            document.getElementById("ans3").innerHTML="shreya";
-            document.getElementById("ans4").value="Daku";
-            document.getElementById("ans4").innerHTML="Daku";
           }
           break;
           case "http://localhost:8000/ML8-2.mp4":
@@ -772,7 +761,7 @@ function myFunction() {
     document.querySelector('.output').textContent = output;
     var video = document.getElementById("video");
     switch (ques) {
-      case "Choose the valid format for declaration of 1D array.":
+      case "Choose the valid format for declaration of 1D array.": //DSA1
           if(output == "int a[60];") {
           video.play();
           } else {
@@ -784,7 +773,391 @@ function myFunction() {
           if(output == "Array is a fixed size sequenced collection of data items of same data type") {
           video.play();
           } else {
-            video.currentTime = 421 ; // 1 sec jada rakha hai because vo pause hai 420 pe 
+            video.currentTime = 421 ;  
+            video.play();
+          }
+          break;
+      case "How do you implement stack?": //DSA2
+          if(output == "Both A & B") {
+          video.play();
+          } else {
+            video.currentTime = 0 ;
+            video.play();
+          }
+          break;
+      case "On which rule does the stack data structure work ?":
+          if(output == "Both A & C") {
+          video.play();
+          } else {
+            video.currentTime = 171 ;  
+            video.play();
+          }
+          break;
+      case "Insertion and Deletion operation in Queue is known as ?": //DSA3
+          if(output == "Enqueue and Dequeue") {
+          video.play();
+          } else {
+            video.currentTime = 0 ;
+            video.play();
+          }
+          break;
+      case "If the elements “A”, “B”, “C” and “D” are placed in a queue and are deleted one at a time, in what order will they be removed?":
+          if(output == "ABCD") {
+          video.play();
+          } else {
+            video.currentTime = 259 ; 
+            video.play();
+          }
+          break;
+      case "What is Data Structure?": //DSA4
+          if(output == "Both b and c") {
+          video.play();
+          } else {
+            video.currentTime = 0 ;
+            video.play();
+          }
+          break;
+      case "Representation of data structure is known as ?":
+          if(output == "abstract data type") {
+          video.play();
+          } else {
+            video.currentTime = 331 ; 
+            video.play();
+          }
+          break;
+      case "Which data structure doesn’t store elements at adjacent memory locations?": //DSA5
+          if(output == "Linked list") {
+          video.play();
+          } else {
+            video.currentTime = 0 ;
+            video.play();
+          }
+          break;
+      case "The nodes in the linked list consist of __________ and ___________.":
+          if(output == "Data, Address of next node") {
+          video.play();
+          } else {
+            video.currentTime = 559 ;  
+            video.play();
+          }
+          break;
+      case "Average cost of accessing element in a linked list is ___________": //DSA6
+          if(output == "O(n)") {
+          video.play();
+          } else {
+            video.currentTime = 0 ;
+            video.play();
+          }
+          break;
+      case "Which data structure requires extra memory for pointer variable?":
+          if(output == "Linked list") {
+          video.play();
+          } else {
+            video.currentTime = 499 ;  
+            video.play();
+          }
+          break;
+      case "When the list as ADT is full, we create a new larger array , ____________ the size of the previous one.": //DSA7
+          if(output == "Double") {
+          video.play();
+          } else {
+            video.currentTime = 0 ;
+            video.play();
+          }
+          break;
+      case "Time Complexity required to access element at any index in a list is ___________":
+          if(output == "O(1)") {
+          video.play();
+          } else {
+            video.currentTime = 550 ; 
+            video.play();
+          }
+          break;
+      case "What is used to implement Linked lists in C or C++?": //DSA8
+          if(output == "Structure") {
+          video.play();
+          } else {
+            video.currentTime = 0 ;
+            video.play();
+          }
+          break;
+      case "Which function is used to dynamically allocate memory to the node in C?":
+          if(output == "Malloc") {
+          video.play();
+          } else {
+            video.currentTime = 256 ; 
+            video.play();
+          }
+          break;
+      case "What is the general term used for the first node of a linked list?": //DSA9
+          if(output == "Head") {
+          video.play();
+          } else {
+            video.currentTime = 0 ;
+            video.play();
+          }
+          break;
+      case "Which Keyword is used instead of malloc to dynamically allocate memory in C++?":
+          if(output == "New") {
+          video.play();
+          } else {
+            video.currentTime = 181 ; 
+            video.play();
+          }
+          break;
+      case "Java is _____ orientated language": //Java1
+          if(output == "Object") {
+          video.play();
+          } else {
+            video.currentTime = 0 ;
+            video.play();
+          }
+          break;
+      case "Command to check whether java is installed or not ?":
+          if(output == "java.c") {
+          video.play();
+          } else {
+            video.currentTime = 211 ;  
+            video.play();
+          }
+          break;
+      case "Syntax to print in Java  ?": //Java2
+          if(output == "system.out.println();") {
+          video.play();
+          } else {
+            video.currentTime = 0 ;
+            video.play();
+          }
+          break;
+      case "Every Java program should have one main class and one method": //Java3
+          if(output == "True") {
+          video.play();
+          } else {
+            video.currentTime = 0 ;
+            video.play();
+          }
+          break;
+      case "Two ways of writing comments in java are ____________ and ____________ ":
+          if(output == "//, /*      */") {
+          video.play();
+          } else {
+            video.currentTime = 694 ; 
+            video.play();
+          }
+          break;
+      case "Size of int in java is ?": //Java4
+          if(output == "4 bytes") {
+          video.play();
+          } else {
+            video.currentTime = 0 ;
+            video.play();
+          }
+          break;
+      case "Total primitive data types in java ?":
+          if(output == "8") {
+          video.play();
+          } else {
+            video.currentTime = 566 ; 
+            video.play();
+          }
+          break;
+      case "By using which class we can get a value from a user?": //Java5
+          if(output == "Scanner class") {
+          video.play();
+          } else {
+            video.currentTime = 0 ;
+            video.play();
+          }
+          break;
+      case "Which Scanner class method is used to read integer value from the user?":
+          if(output == "nextInt()") {
+          video.play();
+          } else {
+            video.currentTime = 85 ;  
+            video.play();
+          }
+          break;
+      case "Which of the following can be operands of arithmetic operators?": //Java6
+          if(output == "Both Numeric & Characters") {
+          video.play();
+          } else {
+            video.currentTime = 0 ;
+            video.play();
+          }
+          break;
+      case "Modulus operator, %, can be applied to which of these?":
+          if(output == "Both Integers and floating – point numbers") {
+          video.play();
+          } else {
+            video.currentTime = 421 ;  
+            video.play();
+          }
+          break;
+      case "if a = 5;  a++;  and b = 7 ; b--; what will be a+b ?": //Java7
+          if(output == "12") {
+          video.play();
+          } else {
+            video.currentTime = 0 ;
+            video.play();
+          }
+          break;
+      case "if a=10 and a*=5 what will be the output ?":
+          if(output == "50") {
+          video.play();
+          } else {
+            video.currentTime = 211 ; 
+            video.play();
+          }
+          break;
+      case "which of the following is a control statement ?": //Java8
+          if(output == "if") {
+          video.play();
+          } else {
+            video.currentTime = 0 ;
+            video.play();
+          }
+          break;
+      case "How many choices are possible when using a single if-else statement?":
+          if(output == "2") {
+          video.play();
+          } else {
+            video.currentTime = 145 ; 
+            video.play();
+          }
+          break;
+      case "Machine Learning involves ?": //ML1
+          if(output == "Machine learn things like humans") {
+          video.play();
+          } else {
+            video.currentTime = 0 ;
+            video.play();
+          }
+          break;
+      case "Neural network model consist of three basic layers called as":
+          if(output == "Input hidden output") {
+          video.play();
+          } else {
+            video.currentTime = 91 ;  
+            video.play();
+          }
+          break;
+      case "Equation for slope ?": //ML2
+          if(output == "Both a and c") {
+          video.play();
+          } else {
+            video.currentTime = 0 ;
+            video.play();
+          }
+          break;
+      case "Syntax to read a .csv file ?":
+          if(output == "df = pd.read_csv(“filename.csv”)") {
+          video.play();
+          } else {
+            video.currentTime = 171 ;  
+            video.play();
+          }
+          break;
+      case "Linear Regression with multiple variables is also called as __________ ": //ML3
+          if(output == "Multivariate Regression") {
+          video.play();
+          } else {
+            video.currentTime = 0 ;
+            video.play();
+          }
+          break;
+      case "Which module is used to convert word to number":
+          if(output == "Word2number") {
+          video.play();
+          } else {
+            video.currentTime = 121 ; 
+            video.play();
+          }
+          break;
+      case "Another name for mean square error is?": //ML4
+          if(output == "Cost function") {
+          video.play();
+          } else {
+            video.currentTime = 0 ;
+            video.play();
+          }
+          break;
+      case "Computational complexity of Gradient descent is?":
+          if(output == "polynomial in D") {
+          video.play();
+          } else {
+            video.currentTime = 259 ; 
+            video.play();
+          }
+          break;
+      case "The process of pickling in Python includes:": //ML5
+          if(output == "conversion of a Python object hierarchy into byte stream") {
+          video.play();
+          } else {
+            video.currentTime = 0 ;
+            video.play();
+          }
+          break;
+      case "Which of the following functions can accept more than one positional argument?":
+          if(output == "pickle.dumps") {
+          video.play();
+          } else {
+            video.currentTime = 139 ;  
+            video.play();
+          }
+          break;
+      case "You want to apply one hot encoding (OHE) on the categorical feature(s). What challenges may you face if you have applied OHE on a categorical variable of training dataset?": //ML6
+          if(output == "Both A and B") {
+          video.play();
+          } else {
+            video.currentTime = 0 ;
+            video.play();
+          }
+          break;
+      case "The dataset used in ML are generally divided as": //ML7
+          if(output == "Training, Testing") {
+          video.play();
+          } else {
+            video.currentTime = 0 ;
+            video.play();
+          }
+          break;
+      case "Which method is used to check the accuracy of the model":
+          if(output == "Score") {
+          video.play();
+          } else {
+            video.currentTime = 79 ; 
+            video.play();
+          }
+          break;
+      case "When there are more than two categories, which classification is it ?": //ML8_1
+          if(output == "Multiclass classification") {
+          video.play();
+          } else {
+            video.currentTime = 0 ;
+            video.play();
+          }
+          break;
+      case "What does sigmoid function do to input data ?":
+          if(output == "Converts the input range from 0 to 1") {
+          video.play();
+          } else {
+            video.currentTime = 121 ; 
+            video.play();
+          }
+          break;
+      case "Which method helps to give a corresponding image from an array of digits ?": //ML8_2
+          if(output == "plt.matshow()") {
+          video.play();
+          } else {
+            video.currentTime = 0 ;
+            video.play();
+          }
+          break;
+      case "Why should one divide the dataset into test and train data ?":
+          if(output == "Both A and C.") {
+          video.play();
+          } else {
+            video.currentTime = 201 ; 
             video.play();
           }
           break;
