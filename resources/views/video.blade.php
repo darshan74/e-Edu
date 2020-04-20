@@ -767,7 +767,7 @@ function myFunction() {
     switch (ques) {
       case "Choose the valid format for declaration of 1D array.": //DSA1
           if(output == "int a[60];") {
-          video.play();
+          video.play(video.currentTime=video.currentTime+1);
           document.getElementById("question").value="";
           document.getElementById("ans1").value="";
           document.getElementById("ans1").innerHTML="";
