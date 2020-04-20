@@ -30,7 +30,7 @@ h1 {
   font-size: 35px;
   color: black;
   font-style: italic;
-  padding:5px;
+  padding-bottom:10px;
 }
 
 /* Create two columns/boxes that floats next to each other */
@@ -71,9 +71,8 @@ section:after {
 
 /* Style the footer */
 footer {
-  background-color: thistle;
   align-content: flex-end;
-  padding: 10px;
+  padding-top: 20px;
   text-align: center;
   color: black;
   float: bottom;
