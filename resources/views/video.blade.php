@@ -44,10 +44,14 @@
 </div>
 <input type="button" value="submit" class="btn btn-success" onclick="submit()">
 </div>
- 
+
+
+<span class="output"></span> 
+
 <footer>
-  Copy@rights
+  Copy@right
 </footer>
+
 
 <script >
 function myFunction() {
