@@ -44,7 +44,6 @@
 </div>
 <input type="button" value="submit" class="btn btn-success" onclick="submit()">
 </div>
-<div id ="haha"></div>
 
 <span class="output"></span> 
 
