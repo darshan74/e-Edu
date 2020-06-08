@@ -70,7 +70,6 @@ function myFunction() {
               video.pause();
             }
               if (video.paused == true && time == "420seconds") {
-                document.getElementById("haha").innerHTML = "true";
                 video.currentTime = 421;
                 var result = confirm("Answer the question");
                 if (result) {
