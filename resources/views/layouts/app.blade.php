@@ -25,13 +25,16 @@
 
 /* Style the header */
 header{
+    
     margin-bottom:20px;
 }
 .jumbotron {
-  padding: 70px 30px;
-  background: #9575CD;
+  background: #3490dc;
   color: floralwhite;
-  text-align: center; 
+  }
+
+  .row-header {
+    text:center;
   }
 
 /* Create two columns/boxes that floats next to each other */
@@ -81,7 +84,7 @@ footer {
   margin-bottom:0;
 }
 @media (max-width: 600px) {
-  nav, article {
+   nav,article {
     width: 100%;
     height: auto;
   }

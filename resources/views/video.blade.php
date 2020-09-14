@@ -3,7 +3,11 @@
 @section('content')
 
 <header class="jumbotron">
-  <h1>Enjoy Learning</h1>
+  <div class="container">
+    <div class="row row-header">
+      <h1>Enjoy Learning</h1>
+    </div>
+  </div> 
 </header>
 
 
