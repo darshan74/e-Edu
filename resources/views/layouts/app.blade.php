@@ -24,19 +24,20 @@
 <style>
 
 /* Style the header */
-h1 {
-  background-color: thistle;
-  text-align: center;
-  font-size: 35px;
-  color: black;
-  font-style: italic;
-  padding-bottom:10px;
+header{
+    margin-bottom:20px;
 }
+.jumbotron {
+  padding: 70px 30px;
+  background: #9575CD;
+  color: floralwhite;
+  text-align: center; 
+  }
 
 /* Create two columns/boxes that floats next to each other */
 #video_view {
   float: left;
-  width: 50%;
+  width: 40%;
   height: 200px; /* only for demonstration, should be removed */
   padding: 20px;
   margin-top: 0px;
@@ -45,9 +46,9 @@ h1 {
 
 article {
   float: right;
-  width: 70%;
-  background-color: #f1f1f1;
-  height: 450px; /* only for demonstration, should be removed */
+  width: 80%;
+  background-color: white;
+  height: 500px; /* only for demonstration, should be removed */
   margin-left: 8%;
   margin-top: 0px;
 }
@@ -57,9 +58,9 @@ article {
     margin-left: 8%;
 }
 /* Style the list inside the menu */
-nav ul {
+ul {
   list-style-type: none;
-  padding: 0;
+  display:inline-table;
 }
 
 /* Clear floats after the columns */
