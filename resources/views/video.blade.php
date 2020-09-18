@@ -26,7 +26,7 @@
       </nav>
 
   <article>
-      <video src="app/public/poster.jpg" class="embed-responsive-item" id="video" width="82.5%" height ="480px" alt="Welcome" controls="controls"></video>
+    <video src="app/public/poster.jpg" class="embed-responsive-item" id="video" width="82.5%" height ="480px" alt="Welcome" controls="controls"></video>
   </article>
 
 </section>
@@ -34,7 +34,7 @@
 
 
 <div id="abc">
-<div id="time"></div>
+  <div id="time"></div>
 
 <div class="container">
   <div  class="form-row">
