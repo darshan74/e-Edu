@@ -33,6 +33,10 @@ header{
   color: floralwhite;
   }
 
+  .py-4 {
+      padding-top : 10px;
+  }
+
   .row-header {
     text:center;
   }

@@ -26,7 +26,7 @@
       </nav>
 
   <article>
-    <video src="app/public/poster.jpg" class="embed-responsive-item" id="video" width="82.5%" height ="480px" alt="Welcome" controls="controls"></video>
+    <video src="app/public/poster.jpg" class="embed-responsive-item" id="video" width="82.5%" height ="480px" alt="Welcome" controls="controls" poster="C:\Users\darshan\Desktop\e-Edu\videoimg.png"></video>
   </article>
 
 </section>
