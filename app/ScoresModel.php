@@ -10,7 +10,8 @@ class ScoresModel extends Model
     
     protected $fillable = [
         'uid', 'score_positive', 'ml_score_positive', 'dsa_score_positive', 'java_score_positive',
-        'score_negative', 'ml_score_negative', 'dsa_score_negative', 'java_score_negative',
-        'recommended_course',
+        'correct_java_basic', 'correct_java_medium', 'correct_java_high', 'correct_ml_basic','correct_ml_medium',
+        'correct_ml_high','correct_dsa_basic','correct_dsa_medium','correct_dsa_high','average_score',
+        'java_eq','ml_eq','dsa_eq','recommended_course',
     ];
 }

@@ -23,3 +23,4 @@ Route::get('/test', 'HomeController@testCandidate')->name('start-test');
 
 // All POST routes
 Route::post('/test/post', 'HomeController@checkScore')->name('check-score');
+Route::post('/recommend/post', 'VideoController@getVideo')->name('video');

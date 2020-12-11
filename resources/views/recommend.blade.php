@@ -37,25 +37,36 @@
                         {{ session('status') }}
                     </div>
                     @endif
+
                         <div class="recom" style="display:none;">
-                            <h3> Based on your current evaluation, the recommended course for you is <span
+                            <h3>Recommended Course: <span
                                 style="color:red">@foreach ($data as $key => $value)
-                                                     {{ $key }}    
-                                                     Score :{{ $value }}
-                                                    @endforeach.
+                                                     {{ $key }}</span>    
+                                                     <br>Score: <span style="color:red">{{ $value }}</span></br>
+                                                    @endforeach
                                                     @if ($value <= 10)
-                                                        Basic
-                                                    @elseif ($value > 10 && $value <= 15)
-                                                        Medium
-                                                    @elseif ($value > 15 && $value <= 25)
-                                                        High
-                                                        @endif
-                                                    </span> </h3>
+                                                        Level: <span style="color:red">Basic</span>
+                                                    @elseif ($value > 10 && $value <= 20)
+                                                        Level: <span style="color:red">Medium</span>
+                                                    @elseif ($value > 20 && $value <= 30)
+                                                        Level: <span style="color:red">High</span>
+                                                    @endif
+                            </h3>
+                                                    <form action="{{route('video')}}" method="post">
+                                                    @csrf
+                                                    @foreach ($data as $key => $value)
+                                                    <input type="hidden" name="dta" value={{$key}}>
+                                                    @endforeach
+                                                    <input type="hidden" name="dta1" value={{$value}}>
+                                                    <div class="recom" style="display:none;">
+                                                        <button type="submit" class="btn btn-success" id="submitButton">
+                                                        NEXT<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+                                                    </div>
                         </div>
+                    </form>
                 </div>
             </div>
         </div>
+    
     </div>
-
-
-    @endsection
+@endsection

@@ -41,12 +41,8 @@ class HomeController extends Controller
             ['subject','=','Java'],
         ])->get(); // This will check whether Questions with all categories exist
 
-        $all_levels_exist = DB::table('qa_db')->where([
-            ['level','=','Basic'],
-            ['level','=','Medium'],
-            ['level','=','High'],
-        ])->get(); //This will check whether questions with all level exist
 
+        
         // if all category doesn't exist, get any questions
         if($all_categories_exist->isEmpty()) {
             $any_questions = QAModel::all()->random()->get();
@@ -109,10 +105,19 @@ class HomeController extends Controller
         $java_score = 0;
 
         //Negative Scores
-        $score_negative = 0;
+        /*$score_negative = 0;
         $dsa_score_negative = 0;
         $ml_score_negative = 0;
-        $java_score_negative = 0;
+        $java_score_negative = 0;*/
+        $CDB = 0;
+        $CDM = 0;
+        $CDH = 0;
+        $CMB = 0;
+        $CMM = 0;
+        $CMH = 0;
+        $CJB = 0;
+        $CJM = 0;
+        $CJH = 0;
 
         foreach($question_array as $question_array) {
             $question = QAModel::where('question', $question_array)->first();
@@ -121,32 +126,18 @@ class HomeController extends Controller
                     $score_positive += 5;
                     $subject = $question->subject;
                     $subject_level = $question->level;
-                    if ($subject === 'DSA' and $subject_level==='Basic') { $dsa_score += 5; }
-                    else if ($subject === 'DSA' and $subject_level==='Medium') { $dsa_score += 10; }
-                    else if ($subject === 'DSA' and $subject_level==='High') { $dsa_score += 15; }
-                    else if ($subject === 'ML' and $subject_level ==='Basic') { $ml_score += 5; }
-                    else if ($subject === 'ML' and $subject_level ==='Medium') { $ml_score += 10; }
-                    else if ($subject === 'ML' and $subject_level ==='High') { $ml_score += 15; }
-                    else if ($subject === 'Java'and $subject_level === 'Basic') { $java_score += 5; }
-                    else if ($subject === 'Java'and $subject_level === 'Medium') { $java_score += 10; }
-                    else if ($subject === 'Java'and $subject_level === 'High') { $java_score += 15; }
+                    if ($subject === 'DSA' and $subject_level==='Basic') { $dsa_score += 5; $CDB +=1; }
+                    else if ($subject === 'DSA' and $subject_level==='Medium') { $dsa_score += 10; $CDM +=1; }
+                    else if ($subject === 'DSA' and $subject_level==='High') { $dsa_score += 15; $CDH +=1; }
+                    else if ($subject === 'ML' and $subject_level ==='Basic') { $ml_score += 5; $CMB +=1; }
+                    else if ($subject === 'ML' and $subject_level ==='Medium') { $ml_score += 10; $CMM +=1; }
+                    else if ($subject === 'ML' and $subject_level ==='High') { $ml_score += 15; $CMH +=1; }
+                    else if ($subject === 'Java'and $subject_level === 'Basic') { $java_score += 5; $CJB +=1; }
+                    else if ($subject === 'Java'and $subject_level === 'Medium') { $java_score += 10; $CJM +=1; }
+                    else if ($subject === 'Java'and $subject_level === 'High') { $java_score += 15; $CJH +=1; }
                     else {Session::flash('message', 'One Subject not found'); } 
                 }
-                else {
-                    $score_negative -= 5;
-                    $subject = $question->subject;
-                    $subject_level = $question->level;
-                    if ($subject === 'DSA' and $subject_level==='Basic') { $dsa_score -= 5; }
-                    else if ($subject === 'DSA' and $subject_level==='Medium') { $dsa_score -= 10; }
-                    else if ($subject === 'DSA' and $subject_level==='High') { $dsa_score -= 15; }
-                    else if ($subject === 'ML' and $subject_level ==='Basic') { $ml_score -= 5; }
-                    else if ($subject === 'ML' and $subject_level ==='Medium') { $ml_score -= 10; }
-                    else if ($subject === 'ML' and $subject_level ==='High') { $ml_score -= 15; }
-                    else if ($subject === 'Java'and $subject_level === 'Basic') { $java_score -= 5; }
-                    else if ($subject === 'Java'and $subject_level === 'Medium') { $java_score -= 10; }
-                    else if ($subject === 'Java'and $subject_level === 'High') { $java_score -= 15; }
-                    else {Session::flash('message', 'One Subject not found'); } 
-                }
+                
                 $newindex++; // To increment answers array
             }
             else {
@@ -155,36 +146,63 @@ class HomeController extends Controller
             }
         }
 
-        // Recommending Courses
-        $ml_eval = ($ml_score + $ml_score_negative)/2;
-        $dsa_eval = ($dsa_score + $dsa_score_negative)/2;
-        $java_eval = ($java_score + $java_score_negative)/2;
+        $ml_eval = ($ml_score)/3;
+        $dsa_eval = ($dsa_score)/3;
+        $java_eval = ($java_score)/3;
 
         $array = array("Machine Learning"=>$ml_eval, "Data Structures"=>$dsa_eval, "Java"=>$java_eval);
         asort($array);
         $first_priority = array_key_last($array);
+        //echo $first_priority;
         $first_priority_key = last($array);
-        //dd($first_priority_key);
+        //echo $first_priority_key;
         $view_array= array($first_priority=>$first_priority_key);
+        $ml_eq = 3;
+        $java_eq = 1;
+        $data_struct_eq = 2;
+        switch ($first_priority) {
+            case "Java":
+                $view_java=array('java_eq'=>$java_eq,'CJB'=>$CJB,'CJM'=>$CJM,'CJH'=>$CJH,'avg'=>$first_priority_key);
+                #echo '<pre>'; print_r($view_java); echo '</pre>';
+            break;
+            case "Data Structures":
+                $view_dsa=array('dsa_eq'=>$data_struct_eq,'CDB'=>$CDB,'CDM'=>$CDM,'CDH'=>$CDH,'avg'=>$first_priority_key);
+                #echo '<pre>'; print_r($view_dsa); echo '</pre>';
+            break;
+            case "Machine Learning":
+                $view_ml=array('ml_eq'=>$ml_eq,'CMB'=>$CMB,'CMM'=>$CMM,'CMH'=>$CMH,'avg'=>$first_priority_key);
+                #echo '<pre>'; print_r($view_ml); echo '</pre>';
+            break;
+            default:
+            echo "Retest";
+        }
         // Saving scores to db
         $score = new ScoresModel;
 
         // dd(auth()->user()->id);
         $score->uid = auth()->user()->id;
         
-        $score->score_positive = (string)$score_positive;
-        $score->ml_score_positive = (string)$ml_score;
-        $score->dsa_score_positive = (string)$dsa_score;
-        $score->java_score_positive = (string)$java_score;
-
-        $score->score_negative = (string)$score_negative;
-        $score->ml_score_negative = (string)$ml_score_negative;
-        $score->dsa_score_negative = (string)$dsa_score_negative;
-        $score->java_score_negative = (string)$java_score_negative;
+        $score->score_positive = (integer)$score_positive;
+        $score->ml_score_positive = (integer)$ml_score;
+        $score->dsa_score_positive = (integer)$dsa_score;
+        $score->java_score_positive = (integer)$java_score;
+        $score->correct_java_basic = (integer)$CJB;
+        $score->correct_java_medium = (integer)$CJM;
+        $score->correct_java_high = (integer)$CJH;
+        $score->correct_ml_basic = (integer)$CMB;
+        $score->correct_ml_medium = (integer)$CMM;
+        $score->correct_ml_high = (integer)$CMH;
+        $score->correct_dsa_basic = (integer)$CDB;
+        $score->correct_dsa_medium = (integer)$CDM;
+        $score->correct_dsa_high = (integer)$CDH;
+        $score->average_score = (float)$first_priority_key;
+        $score->java_eq = (integer)$java_eq;
+        $score->dsa_eq = (integer)$data_struct_eq;
+        $score->ml_eq = (integer)$ml_eq; 
         $score->recommended_course = (string)$first_priority;
         $score->save();
         return view('recommend')->with('data', $view_array);
         // return view('recommend')->with('data', $first_priority_key);
-        
+
     }
 }

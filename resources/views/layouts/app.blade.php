@@ -21,6 +21,80 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+<style>
+
+/* Style the header */
+header{
+    
+    margin-bottom:20px;
+}
+.jumbotron {
+  background: #3490dc;
+  color: floralwhite;
+  }
+
+  .py-4 {
+      padding-top : 10px;
+  }
+
+  .row-header {
+    text:center;
+  }
+
+/* Create two columns/boxes that floats next to each other */
+#video_view {
+  float: left;
+  width: 40%;
+  height: 200px; /* only for demonstration, should be removed */
+  padding: 20px;
+  margin-top: 0px;
+  position: absolute;
+}
+
+article {
+  float: right;
+  width: 80%;
+  background-color: white;
+  height: 500px; /* only for demonstration, should be removed */
+  margin-left: 8%;
+  margin-top: 0px;
+}
+
+#abc {
+    width: 90%;
+    margin-left: 8%;
+}
+/* Style the list inside the menu */
+ul {
+  list-style-type: none;
+  display:inline-table;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  align-content: flex-end;
+  padding-top: 20px;
+  text-align: center;
+  color: black;
+  float: bottom;
+  clear: both;
+  margin-bottom:0;
+}
+@media (max-width: 600px) {
+   nav,article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+</style>
 </head>
 <body>
     <!-- Preloader style, script and div -->

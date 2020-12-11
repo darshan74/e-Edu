@@ -13,5 +13,6 @@ class DatabaseSeeder extends Seeder
     {
         // this'll seed QA table.
         $this->call(QATableSeeder::class);
+        $this->call(VTableSeeder::class);
     }
 }
